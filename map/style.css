@@ -1,11 +1,20 @@
 * {
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: rgb(194, 61, 0);
+}
 li {
   list-style-type: none;
 }
 body {
-  background: rgb(255, 255, 204);
+  background-image: linear-gradient(
+    rgb(0, 195, 255),
+    rgb(255, 255, 204),
+    rgb(255, 255, 204),
+    rgb(255, 255, 204)
+  );
   height: 100%;
   text-align: center;
   font-family: "Trebuchet MS", sans-serif;
@@ -26,10 +35,28 @@ nav {
 }
 nav li {
   display: inline;
-  padding-left: 50px;
+  padding: 0px 25px 2px 25px;
+  background-color: rgb(255, 255, 95);
+  border: 1px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-size: 25px;
+}
+nav li:hover {
+  background-color: rgb(0, 195, 255);
 }
 #poiSection {
   grid-area: poi;
+  padding-top: 40px;
+  color: rgb(221, 0, 111);
+}
+#poiSection img {
+  border-radius: 10%;
+}
+footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  grid-area: footer;
 }
 #emails {
   grid-area: emails;
@@ -38,14 +65,13 @@ nav li {
   grid-area: extra;
   padding-right: 40px;
 }
-footer {
-  padding-top: 50px;
-  grid-area: footer;
-}
 .grid-container-map {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-areas: "header nav" "map map" "poi poi" "footer footer";
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .grid-container-footer {
   display: grid;
