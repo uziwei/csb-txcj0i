@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+body {
+  background: rgb(255, 255, 204);
+  height: 100%;
+  text-align: center;
+  font-family: "Trebuchet MS", sans-serif;
+}
+#logo {
+  grid-area: logo;
+}
+#map {
+  grid-area: map;
+}
+header {
+  grid-area: header;
+  padding-top: 40px;
+}
+nav {
+  grid-area: nav;
+  padding-top: 80px;
+}
+nav li {
+  display: inline;
+  padding-left: 50px;
+}
+#poiSection {
+  grid-area: poi;
+}
+#emails {
+  grid-area: emails;
+}
+#extraInfo {
+  grid-area: extra;
+  padding-right: 40px;
+}
+footer {
+  padding-top: 50px;
+  grid-area: footer;
+}
+.grid-container-map {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "header nav" "map map" "poi poi" "footer footer";
+}
+.grid-container-footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "emails extra";
+}

@@ -22,21 +22,20 @@
   https://txcj0i.csb.app/home/home.html<br /><br />
   FOR DELETION PRIOR TO SUBMISSION-->
   
-  <a href="/"><h4>BACK TO INDEX</h4></a>
+
 
   <header>
-    <!--I've placed the logo and theme park name together as a header-->
+    <!--I've placed the logo, theme park name and site links together as a header-->
     <img
       src="/resources/logo.png"
       alt="Acropolis Theme Park"
-      width="148.3"
-      height="92.3"
+      width="200"
     />
     <!--Credits to Ricardo for providing the original image-->
     <h1>
       ACROPOLIS THEME PARK
     </h1>
-  </header>
+  
   <h3>Site Links</h3>
   <nav>
     <ul>
@@ -44,19 +43,80 @@
       <li><a href="/home/home.html">Home</a></li>
       <li><a href="/map/map.html">Map</a></li>
       <li><a href="/help/help.html">Help</a></li>
-      <li><a href="/">EN</a>&nbsp|&nbsp<a href="/">ES</a></li>
+
+      <div> <!--Language Division-->
+      <!--Developer note: this input doesn't behave as expected due to John's incompetence-->
+      <label for="language-select" Languages </label>
+        <select name="languages">
+            <option value="EN">
+              <a href="/home/home.html">EN</a>
+              </option>
+            <option value="ES">
+              <a href="/home/home.html">ES</a>
+            </option>
+        </select>
+      </div> <!--Language Division-->
+
     </ul>
   </nav>
-  <!--<nav>
-       <a href="/">Index</a> |
-       <a href="/map/map.html">Map</a> |
-       <a href="/help/help.html">Help</a>
-  </nav>
-  -->
+  </header>
  
-  <body>
-  </body>
+  <body style="background-color: rgb(255, 255, 204)">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/3/37/%E5%90%88%E8%82%A5%E4%B8%87%E8%BE%BE%E4%B9%90%E5%9B%AD%E7%99%BD%E9%BE%99%E9%A3%9E%E5%A4%A9%E8%BF%87%E5%B1%B1%E8%BD%A6%E9%92%9D%E8%BD%A8%E8%BD%AC%E8%BE%99%E5%99%A8.gif" 
+      alt="Roller Coaster Rail Change - Animated"
+      width="1200"
+      />
+      <!--Image Credits to MasaneMiyaPA, CC BY-SA 4.0
+      <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons-->
   <br> </br>
+  <!--Booking User Input START-->
+  <!--Developer note: The inputs do not send anything to anywhere yet-->
+  <div> <!--Booking Division-->
+  <input type="date"> 
+        -
+  <input type="date">
+
+  <select name="guestsAdults">
+    <option value=""> -- </option>
+    <option value="1"> 1 </option>
+    <option value="2"> 2 </option>
+    <option value="3"> 3 </option>
+    <option value="4"> 4 </option>
+    <option value="5"> 5 </option>
+    <option value="6"> 6 </option>
+    <option value="7"> 7 </option>
+    <option value="8"> 8 </option>
+    <option value="9"> 9 </option>
+  </select>
+
+  <select name="guestsKids">
+    <option value=""> -- </option>
+    <option value="1"> 1 </option>
+    <option value="2"> 2 </option>
+    <option value="3"> 3 </option>
+    <option value="4"> 4 </option>
+    <option value="5"> 5 </option>
+    <option value="6"> 6 </option>
+  </select>
+
+  <select name="guestsRooms">
+    <option value=""> -- </option>
+    <option value="1"> 1 </option>
+    <option value="2"> 2 </option>
+    <option value="3"> 3 </option>
+  </select>
+  <!--Developer note: The inputs do not send anything to anywhere yet-->
+  <!--Booking User Input END-->
+
+  <a href="/help/help.html">BOOK NOW</a>
+  <!--Developer note: Clicking BOOK NOW takes the visitor to help-->
+  </div><!--Booking Division-->
+
+  <br> </br>
+
+  [Other attractions]
+  </body>
   <footer>
     <div id="Information"> 
       <ul>
@@ -71,5 +131,8 @@
         <li><a href="/">Terms and Conditions</a></li>
       </ul>
     </div>
+
+    <a href="/"><h4>BACK TO DEVELOPER INDEX</h4></a>
+
   </footer>
 </html>

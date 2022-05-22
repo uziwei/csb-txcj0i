@@ -7,79 +7,43 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <meta content="noindex,nofollow" name="robot" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <title>ACROPOLIS - MAP</title></head
   ><!-- This body section contains the structure for all the visble content -->
-  <body style="background-color: rgb(255, 255, 204);">
+  <body class="grid-container-map">
     <header>
-      <nav>
-        <!-- NAV SECTION -->
-        <ul style="list-style-type: none; margin: 0; padding: 0;">
-          <li style="display: inline;">
-            <a href="/home/home.html"
-              ><img
-                alt="Logo"
-                src="/resources/logo.png"
-                title="Logo"
-                width="200"
-            /></a>
-          </li>
-          <li
-            style="
-              display: inline;
-              float: right;
-              padding-right: 50px;
-              padding-top: 50px;
-            "
-          >
-            <a href="/help/help.html">EN</a>&nbsp;|&nbsp;<a
-              href="/help/help.html"
-              >ES</a
-            >
-          </li>
-          <li
-            style="
-              display: inline;
-              float: right;
-              padding-right: 50px;
-              padding-top: 50px;
-            "
-          >
-            <a href="/">Back to Index</a>
-          </li>
-          <li
-            style="
-              display: inline;
-              float: right;
-              padding-right: 50px;
-              padding-top: 50px;
-            "
-          >
-            <a href="/help/help.html">Help</a>
-          </li>
-          <li
-            style="
-              display: inline;
-              float: right;
-              padding-right: 50px;
-              padding-top: 50px;
-            "
-          >
-            <a href="/map/map.html">Map</a>
-          </li>
-          <li
-            style="
-              display: inline;
-              float: right;
-              padding-right: 50px;
-              padding-top: 50px;
-            "
-          >
-            <a href="/home/home.html">Home</a>
-          </li>
-        </ul>
-      </nav>
+      <a href="/home/home.html" id="logo"
+        ><img alt="Logo" src="/resources/logo.png" title="Logo" width="200"
+      /></a>
     </header>
-    <div id="Map" style="text-align: center;">
+    <nav>
+      <!-- NAV SECTION -->
+      <ul>
+        <li>
+          <a href="/home/home.html">Home</a>
+        </li>
+        <li>
+          <a href="/map/map.html">Map</a>
+        </li>
+        <li>
+          <a href="/help/help.html">Help</a>
+        </li>
+        <li>
+          <a href="/">Back to Index</a>
+        </li>
+        <li>
+          <select name="languages">
+            <option value="EN">
+              EN
+            </option>
+            <option value="ES">
+              ES
+            </option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+    <div id="map">
       <!-- MAP IMAGE SECTIOM -->
       <div id="mapTitle">
         <h1>MAP</h1>
@@ -95,11 +59,12 @@
         /></a>
       </div>
     </div>
-    <div id="poiSection" style="text-align: center;">
+    <div id="poiSection">
       <!-- POI IMAGE SECTION -->
       <div id="poi">
         <h2>POINTS OF INTEREST</h2>
       </div>
+      <br />
       <div id="poiImageRow1">
         <!-- POI ROW 1 -->
         <a href="/help/help.html"
@@ -181,17 +146,19 @@
       </div>
     </div>
     <br />
-    <footer>
-      <div id="Information" style="text-align: center;">
+    <footer class="grid-container-footer">
+      <div id="emails">
         <!-- INFO SECTION -->
-        <ul id="Email" style="list-style: none;">
+        <ul>
           <li><b>CONTACT US</b></li>
-          <li id="email">
+          <li>
             <!-- EMAIL -->
             <a href="mailto:info@acropolis.gg">info@acropolis.gg</a>
           </li>
         </ul>
-        <ul id="extraInfo" style="list-style: none;">
+      </div>
+      <div id="extraInfo">
+        <ul>
           <li>
             <b>OTHER INFO</b>
             <!-- EXTRA INFO LINKS -->
