@@ -47,7 +47,7 @@ nav li:hover {
 }
 #poiSection {
   grid-area: poi;
-  padding-top: 40px;
+  padding-top: 15px;
   color: rgb(221, 0, 111);
 }
 #poiSection img {
