@@ -1,0 +1,19 @@
+header {
+  grid-area: header;
+
+  padding-top: 40px;
+}
+
+nav li {
+  display: inline;
+}
+
+#booking {
+  font-family: "Trebuchet MS", sans-serif;
+  /*text-decoration: none;
+  */
+}
+
+footer {
+  display: inline;
+}

@@ -4,8 +4,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow"
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="/home/style.css" rel="stylesheet">
     <title>ACROPOLIS - HOME</title>
+    
   </head>
 
   <!-- FOR DELETION PRIOR TO SUBMISSION
@@ -22,8 +25,6 @@
   https://txcj0i.csb.app/home/home.html<br /><br />
   FOR DELETION PRIOR TO SUBMISSION-->
   
-
-
   <header>
     <!--I've placed the logo, theme park name and site links together as a header-->
     <img
@@ -32,33 +33,18 @@
       width="200"
     />
     <!--Credits to Ricardo for providing the original image-->
-    <h1>
-      ACROPOLIS THEME PARK
-    </h1>
-  
-  <h3>Site Links</h3>
-  <nav>
-    <ul>
-      <li><a href="/">Back to Index</a></li>
-      <li><a href="/home/home.html">Home</a></li>
-      <li><a href="/map/map.html">Map</a></li>
-      <li><a href="/help/help.html">Help</a></li>
-
-      <div> <!--Language Division-->
-      <!--Developer note: this input doesn't behave as expected due to John's incompetence-->
-      <label for="language-select" Languages </label>
-        <select name="languages">
-            <option value="EN">
-              <a href="/home/home.html">EN</a>
-              </option>
-            <option value="ES">
-              <a href="/home/home.html">ES</a>
-            </option>
-        </select>
-      </div> <!--Language Division-->
-
-    </ul>
-  </nav>
+    <nav class="menu">
+      <ul>
+        <li><a href="/home/home.html">Home</a></li>
+        <li><a href="/map/map.html">Map</a></li>
+        <li><a href="/help/help.html">Help</a></li>
+        <li><select name="languages">
+              <option value="EN">EN</option>
+              <option value="ES">ES</option>
+            </select>
+        </li>
+      </ul>
+    </nav>
   </header>
  
   <body style="background-color: rgb(255, 255, 204)">
@@ -72,12 +58,15 @@
   <br> </br>
   <!--Booking User Input START-->
   <!--Developer note: The inputs do not send anything to anywhere yet-->
-  <div> <!--Booking Division-->
-  <input type="date"> 
+  <div id=booking> <!--Booking Division-->
+  <label for="fromDate">From</label>
+  <input type="date" id="fromDate"> 
         -
-  <input type="date">
+  <label for="toDate">to</label>
+  <input type="date" id="toDate">
 
-  <select name="guestsAdults">
+  <label for="guestsAdults">Adults</label>
+  <select id="guestsAdults">
     <option value=""> -- </option>
     <option value="1"> 1 </option>
     <option value="2"> 2 </option>
@@ -90,7 +79,8 @@
     <option value="9"> 9 </option>
   </select>
 
-  <select name="guestsKids">
+  <label for="guestsKids">Kids</label>
+  <select id="guestsKids">
     <option value=""> -- </option>
     <option value="1"> 1 </option>
     <option value="2"> 2 </option>
@@ -100,7 +90,8 @@
     <option value="6"> 6 </option>
   </select>
 
-  <select name="guestsRooms">
+  <label for="guestsRooms">Rooms</label>
+  <select id="guestsRooms">
     <option value=""> -- </option>
     <option value="1"> 1 </option>
     <option value="2"> 2 </option>
@@ -114,11 +105,18 @@
   </div><!--Booking Division-->
 
   <br> </br>
-
+  <div id="attractions">
   [Other attractions]
+  <br>
+    <a href="/map/map.html">
+      <img src="/resources/map/poi/rollerCoaster.jpg" width="200px" alt="Roller Coaster"/></a>
+      <img src="/resources/offers/offer.jpg" width="200px" alt="Extended Offers"/>
+    <a href="/help/help.html">
+      <img src="/resources/map/poi/hotel.jpg" width="200px" alt="Hotels"/></a>
+      <img src="/resources/acropolis.jpg" height=200px alt="Acropolis"/>
+  </div>
   </body>
   <footer>
-    <div id="Information"> 
       <ul>
         CONTACT US
         <li id="email">
@@ -130,7 +128,7 @@
         <li><a href="/">Newsletter</a></li>
         <li><a href="/">Terms and Conditions</a></li>
       </ul>
-    </div>
+   
 
     <a href="/"><h4>BACK TO DEVELOPER INDEX</h4></a>
 
