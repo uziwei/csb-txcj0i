@@ -1,0 +1,44 @@
+
+    /*** CSS style sheet for navigation bar ***/
+.column1
+<style>
+  ul {
+    list-syle-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+li {
+  float:left;
+  display: inline;
+  border-right:apx solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(231, 235, 16);
+}
+
+.active {
+  background-color: rgb(12, 209, 235);
+}
+
+img {
+  border-radius: 12px;
+}
+</style>
+
+
+

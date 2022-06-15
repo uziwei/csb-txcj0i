@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Credits: John AGCAOILI-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow"
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="/home/style.css" rel="stylesheet">
+    <title>ACROPOLIS - HOME</title>
+    
+  </head>
+
+  <!-- FOR DELETION PRIOR TO SUBMISSION
+  There is some bug in the server which doesn't update the URL when you access a
+  subpage from the main index
+  
+  <br />
+  After pressing Control+S to save and update it will drop you back to the main
+  index.
+  <br />
+  To get around this bug just update the URL with:<br />
+  <br />
+ 
+  https://txcj0i.csb.app/home/home.html<br /><br />
+  FOR DELETION PRIOR TO SUBMISSION-->
+  
+  <header>
+    <img
+      src="/resources/logo.png"
+      alt="Acropolis Theme Park"
+      width="200"
+    />
+    <!--Credits to Ricardo for providing the original image-->
+    <nav class="menu">
+      <ul>
+        <li><a href="/home/home.html">Home</a></li>
+        <li><a href="/map/map.html">Map</a></li>
+        <li><a href="/help/help.html">Help</a></li>
+        <li><select name="languages">
+              <option value="EN">EN</option>
+              <option value="ES">ES</option>
+            </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <body style="background-color: rgb(255, 255, 204)">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/3/37/%E5%90%88%E8%82%A5%E4%B8%87%E8%BE%BE%E4%B9%90%E5%9B%AD%E7%99%BD%E9%BE%99%E9%A3%9E%E5%A4%A9%E8%BF%87%E5%B1%B1%E8%BD%A6%E9%92%9D%E8%BD%A8%E8%BD%AC%E8%BE%99%E5%99%A8.gif" 
+      alt="Roller Coaster Rail Change - Animated"
+      width="1200"
+      />
+      <!--Image Credits to MasaneMiyaPA, CC BY-SA 4.0
+      <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons-->
+  <br> </br>
+  <!--Booking User Input START-->
+  <!--Developer note: The inputs do not send anything to anywhere yet-->
+  <div class=booking> <!--Booking Division-->
+  <label for="fromDate">From</label>
+  <input type="date" id="fromDate"> 
+        -
+  <label for="toDate">to</label>
+  <input type="date" id="toDate">
+
+  <label for="guestsAdults">Adults</label>
+  <select id="guestsAdults">
+    <option value=""> -- </option>
+    <option value="1"> 1 </option>
+    <option value="2"> 2 </option>
+    <option value="3"> 3 </option>
+    <option value="4"> 4 </option>
+    <option value="5"> 5 </option>
+    <option value="6"> 6 </option>
+    <option value="7"> 7 </option>
+    <option value="8"> 8 </option>
+    <option value="9"> 9 </option>
+  </select>
+
+  <label for="guestsKids">Kids</label>
+  <select id="guestsKids">
+    <option value=""> -- </option>
+    <option value="1"> 1 </option>
+    <option value="2"> 2 </option>
+    <option value="3"> 3 </option>
+    <option value="4"> 4 </option>
+    <option value="5"> 5 </option>
+    <option value="6"> 6 </option>
+  </select>
+
+  <label for="guestsRooms">Rooms</label>
+  <select id="guestsRooms">
+    <option value=""> -- </option>
+    <option value="1"> 1 </option>
+    <option value="2"> 2 </option>
+    <option value="3"> 3 </option>
+  </select>
+  <!--Developer note: The inputs do not send anything to anywhere yet-->
+  <!--Booking User Input END-->
+
+  <a href="/help/help.html">BOOK NOW</a>
+  <!--Developer note: Clicking BOOK NOW takes the visitor to help-->
+  </div><!--Booking Division-->
+
+  <br> </br>
+  <div id="attractions">
+  [Other attractions]
+  <br>
+    <a href="/map/map.html">
+      <img src="/resources/map/poi/rollerCoaster.jpg" width="200px" alt="Roller Coaster"/></a>
+      <img src="/resources/offers/offer.jpg" width="200px" alt="Extended Offers"/>
+    <a href="/help/help.html">
+      <img src="/resources/map/poi/hotel.jpg" width="200px" alt="Hotels"/></a>
+      <img src="/resources/acropolis.jpg" height=200px alt="Acropolis"/>
+  </div>
+  </body>
+  <footer>
+      <ul>
+        CONTACT US
+        <li id="email">
+          <a href="mailto:info@acropolis.gg">info@acropolis.gg</a>
+        </li>
+      </ul>
+      <ul>
+        OTHER INFO
+        <li><a href="/">Newsletter</a></li>
+        <li><a href="/">Terms and Conditions</a></li>
+      </ul>
+   
+
+    <a href="/"><h4>BACK TO DEVELOPER INDEX</h4></a>
+
+  </footer>
+</html>

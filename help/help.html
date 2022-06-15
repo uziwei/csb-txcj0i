@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Credits: Ricardo VIEITES-->
+      <!--- Meta data for browser compatability-->
+      <meta charset="UTF-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+      <title>HELP</title>
+  <!-- Credits: Ricardo -->
   <!--Toolbar header-->
-  <header>
-   <meta charset="UTF-8" />
-   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-   <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-   <title>HELP</title>
-  
-<!--Toolbar logo-->
-<h1>
-  <img
-    src="/resources/logo.png"
-    alt="Acropolis Logo"
-    width="150"
-    height="100"
-  />
-</h1>
-<nav>
-<a href="home.html">Home</a>
-<a href="map.html">Map</a>
-<a href="assistance.html">Assistance</a>
-<a href="/index.html">Welcome</a>
-</nav>
-  </header>
+  <head>
 
+<!--Toolbar logo-->
+
+<img
+src="/resources/logo.png"
+alt="Acropolis Logo"
+width="150"
+height="100"
+/>
+  
+  </head>
+ 
   <section>
+
   <body>
+   
+<!-- Navigation bar links to other web pages-->
+     <div class="column1">
+     <ul>
+  
+          <li><a class="active" href="/home/home.html">Home</a></li>
+          <li><a href="/map/map.html">Map</a></li>
+          <li><a href="#assistance">Assistance</a></li>
+          <li style= "float:right"><a href="/index/index.html">Welcome index</a></li>
+      </ul>
+    </div>
+
     <h2 id="top">HOTEL</h2>
     <p>After a fun filled day at Acropolis you may need some time to relax.
       Our hotel has a historic theme so as you are captivated by all the attractions you can experience the true marvels with all the historical architecture that has to offer and with fun filled entertainment for all the family to enjoy.</p>
@@ -39,14 +47,30 @@
       
       <p>So don’t delay and book your hotel reservations today.
       </p>
+
+<fieldset>
+  <legend>Why not book your stay with us </legend>
+<form action="http://www.acronnis.com/help/profile.php" 
+method="post">
+ <label for="arrival">Arrival date:</label>
+ <input type=date" name="arrival" />
+ <label for="Departure">Departure date:</label>
+ <input type=date" name="Depart" />
+ <label for="Number">Number of guests:</label>
+ <input type=Number" name="Number" />
+ <input type="submit" value="Reserve my spot"/>
+</form>
+</fieldset>
+
+  
     <img
-      src="/resources/Theme Park.png"
-      alt="Theme park"
+      src="/resources/help/hotelLandscape.jpg"
+      alt="Hotel_landscape"
       width="619"
       height="409"
     />
   </section>
-    <h2 id="middle">Award Winning Customer Service</h2>
+    <h2 id="middle">Award winning Customer service</h2>
     <body>
       
       <p>At Acropolis we offer a 5-star customer service. Our team is highly trained to help everyone with any of your requests. At Acropolis we believe a smile and a chat can do wonders. So why not come down to any of our help centre booths where we are happy to help.</p>
@@ -58,27 +82,28 @@
       <p>Come on down and speak to any of our helpful team today.</p>
         
       <img
-        src="/resources/Customer Service.png"
+        src="/resources/help/customerService.jpg"
         alt="Customer Service"
         width="619"
         height="409"
       />
+      <H3>Terms and conditions</H3>
+      <ul>
+        <Li><a href="http://map.html">
+          Terms and conditions</a></li>
 
 
-    <!----<br />
-    There is some bug in the server which doesn't update the URL when you access
-    //a subpage from the main index<br />
-    After pressing Control+S to save and update it will drop you back to the
-    main index.<br />
-    To get around this bug just update the URL with:<br />
-    <br />
-    https://txcj0i.csb.app/help/help.html<br />
-    <br />
-    ///////////////////////////////////////////////////////////////////////////////// --->
-    
+
   </body>
 
   <!--Footer goes here-->
   <footer></footer>
 
+  
 </html>
+<!----body {
+  font-family : Arial, Verdana, sans-serif;}
+  h1,h2 {
+    color: #ee3e80;}
+    p {
+      color: #665544;} --->
