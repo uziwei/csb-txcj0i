@@ -16,17 +16,17 @@
         ><img
           alt="Logo"
           src="https://i.ibb.co/BLjYt7H/logo33.png"
-          title="Logo"
+          title="ACROPOLIS Home"
           width="200"
       /></a>
     </header>
     <nav>
       <ul>
-        <li><a href="/home/home.html">HOME</a></li>
+        <li><a class="contract" href="/home/home.html">HOME</a></li>
         <li><a id="nav2" href="/map/map.html">MAP</a></li>
         <li><a id="nav3" href="/help/help.html">HELP</a></li>
-        <li>
-          <select name="languages">
+        <li id="nav4">
+          <select title="Change Language" name="languages">
             <option value="EN">EN</option>
             <option value="ES">ES</option>
           </select>
@@ -34,13 +34,12 @@
       </ul>
     </nav>
     <div id="map">
-      <a href="/map/map.html"
-        ><img
-          class="mapImage"
-          alt="Map"
-          src="/resources/map/map.png"
-          title="Map"
-      /></a>
+      <img
+        class="mapImage"
+        alt="Map"
+        src="/resources/map/map.png"
+        title="Map"
+      />
     </div>
     <div id="poiSection">
       <!-- POI IMAGE SECTION -->
@@ -48,79 +47,67 @@
         <h1>- POINTS OF INTEREST -</h1>
       </div>
       <div id="poiImageRow1">
-        <!-- POI ROW 1 -->
-        <a href="/help/help.html"
-          ><img
-            alt="Hotel"
-            height="200"
-            src="/resources/map/poi/hotel.jpg"
-            title="Hotel"
-            width="200" /></a
-        ><a href="/help/help.html" class="poiSpace"
-          ><img
-            alt="Restaurant"
-            height="200"
-            src="https://i.ibb.co/cJK2xzm/restaurant.png"
-            title="Restaurant"
-            width="200" /></a
-        ><a href="/map/map.html"
-          ><img
-            alt="Roller Coaster"
-            height="200"
-            src="/resources/map/poi/rollerCoaster.jpg"
-            title="Roller Coaster"
-            width="200" /></a
-        ><a href="/map/map.html" class="poiSpace"
-          ><img
-            alt="Carousel"
-            height="200"
-            src="/resources/map/poi/carousel.jpg"
-            title="Carousel"
-            width="200" /></a
-        ><a href="/map/map.html"
-          ><img
-            alt="Log Rides"
-            height="200"
-            src="/resources/map/poi/logRides.jpg"
-            title="Log Rides"
-            width="200"
-        /></a>
-        <a href="/map/map.html"
-          ><img
-            alt="Bumper Cars"
-            height="200"
-            src="/resources/map/poi/bumperCars.jpg"
-            title="Bumper Cars"
-            width="200" /></a
-        ><a href="/map/map.html" class="poiSpace"
-          ><img
-            alt="Ghost Train"
-            height="200"
-            src="/resources/map/poi/ghostTrain.jpg"
-            title="Ghost Train"
-            width="200" /></a
-        ><a href="/map/map.html"
-          ><img
-            alt="Ferris Wheel"
-            height="200"
-            src="/resources/map/poi/ferrisWheel.jpg"
-            title="Ferris Wheel"
-            width="200" /></a
-        ><a href="/map/map.html" class="poiSpace"
-          ><img
-            alt="Wildlife Centre"
-            height="200"
-            src="/resources/map/poi/wildlifeCentre.jpg"
-            title="Wildlife Centre"
-            width="200" /></a
-        ><a href="/map/map.html"
-          ><img
-            alt="Pendulum Ride"
-            height="200"
-            src="/resources/map/poi/pendulumRide.jpg"
-            title="Pendulum Ride"
-            width="200"
-        /></a>
+        <div
+          id="poiHover1"
+          class="poiHover"
+          data-text="1. HOTEL"
+          data-text1="Our HOTEL is situated just outside the entrance to the main park"
+        ></div>
+
+        <div
+          id="poiHover2"
+          class="poiHover"
+          data-text="2. RESTAURANT"
+          data-text1="Our RESTAURANT is situated just outside the entrance to the main park"
+        ></div>
+        <div
+          id="poiHover3"
+          class="poiHover"
+          data-text="3. ROLLER COASTER"
+          data-text1="Our ROLLER COASTER is situated just outside the entrance to the main park"
+        ></div>
+        <div
+          id="poiHover4"
+          class="poiHover"
+          data-text="4. CAROUSEL"
+          data-text1="Our CAROUSEL is situated just outside the entrance to the main park"
+        ></div>
+        <div
+          id="poiHover5"
+          class="poiHover"
+          data-text="5. LOG RIDES"
+          data-text1="Our LOG RIDES is situated just outside the entrance to the main park"
+        ></div>
+        <div
+          id="poiHover6"
+          class="poiHover"
+          data-text="6. BUMPER CARS"
+          data-text1="Our BUMPER CARS is situated just outside the entrance to the main park"
+        ></div>
+        <div
+          id="poiHover7"
+          class="poiHover"
+          data-text="7. GHOST TRAIN"
+          data-text1="Our GHOST TRAIN is situated just outside the entrance to the main park"
+        ></div>
+        <div
+          id="poiHover8"
+          class="poiHover"
+          data-text="8. FERRIS WHEEL"
+          data-text1="Our FERRIS WHEEL is situated just outside the entrance to the main park"
+        ></div>
+        <div
+          id="poiHover9"
+          class="poiHover"
+          data-text="9. WILDLIFE CENTRE"
+          data-text1="Our WILDLIFE CENTRE is situated just outside the entrance to the main park"
+        ></div>
+        <div
+          id="poiHover10"
+          class="poiHover"
+          data-text="10. PENDULUM RIDE"
+          data-text1="Our PENDULUM RIDE is situated just outside the entrance to the main park"
+        ></div>
       </div>
     </div>
     <footer class="grid-container-footer">
