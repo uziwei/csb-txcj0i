@@ -67,3 +67,15 @@ footer {
   grid-template-columns: auto auto;
   grid-template-areas: "contact info";
 }
+
+select {
+  max-width: 100%;
+  max-height: 100%;
+  appearance: none; /* Remove default arrow */
+  border: 0px;
+  font-size: 25px;
+  color: rgb(236, 43, 0);
+  background-color: transparent;
+  outline: 0px;
+  padding: 0px 5px 0px 5px;
+}
