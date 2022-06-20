@@ -31,6 +31,12 @@ header {
   transform: translateX(25px);
 }
 
+@media screen and (max-width: 400px) {
+  #logo:hover {
+    transform: translateX(0px);
+  }
+}
+
 nav {
   grid-area: nav;
 }
@@ -61,7 +67,7 @@ nav li:hover {
 }
 
 #nav3 {
-  padding: 0px 29px 2px 29px;
+  padding: 0px 19px 2px 19px;
 }
 
 #nav4 select {
@@ -77,10 +83,6 @@ nav li:hover {
 @media screen and (max-width: 940px) {
   #logo {
     margin: 9.5px 0px 0px 4px;
-  }
-
-  #logo:hover {
-    transform: translateX(0px);
   }
 
   nav ul {
@@ -113,10 +115,10 @@ nav li:hover {
 
 #poi {
   grid-area: poi;
-  margin-top: 15px;
 }
 
 #poiTittle {
+  margin-top: 20px;
   font-size: 32px;
   font-weight: bold;
   color: rgb(255, 15, 135);
