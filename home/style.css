@@ -8,6 +8,10 @@ a {
   text-decoration: none;
   color: rgb(194, 61, 0);
 }
+
+h1 {
+  color: rgb(255, 15, 135);
+}
 body {
   background-image: linear-gradient(
     rgb(0, 195, 255),
@@ -50,6 +54,11 @@ footer {
   grid-area: footer;
 }
 
+.offersClass {
+  grid-area: offers;
+  padding-top: 15px;
+}
+
 .book {
   padding: 7.5px;
   border: 1px solid black;
@@ -59,7 +68,7 @@ footer {
 .grid-container {
   display: display-box;
   grid-template-columns: auto auto;
-  grid-template-areas: "header menu" "banner banner" "booking booking" "attractions attractions";
+  grid-template-areas: "header menu" "banner banner" "booking booking" "offers offers";
 }
 
 .grid-footer {
@@ -68,7 +77,7 @@ footer {
   grid-template-areas: "contact info";
 }
 
-select {
+#languages {
   max-width: 100%;
   max-height: 100%;
   appearance: none; /* Remove default arrow */
@@ -78,4 +87,76 @@ select {
   background-color: transparent;
   outline: 0px;
   padding: 0px 5px 0px 5px;
+}
+
+#guestsBooking {
+  max-width: 100%;
+  max-height: 100%;
+
+  font-size: 20px;
+  color: rgb(236, 43, 0);
+  background-color: rgb(255, 255, 95);
+  outline: 1px;
+  padding: 0px 5px 0px 5px;
+}
+#image0 {
+  background-image: url(/resources/offers/offer.jpg);
+}
+
+#image1 {
+  background-image: url(/resources/map/poi/rollerCoaster.jpg);
+}
+
+#image2 {
+  background-image: url(/resources/map/poi/hotel.jpg);
+}
+
+#image3 {
+  background-image: url(/resources/acropolis.jpg);
+}
+
+.textHover {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  /* remove float: center; */
+
+  display: inline-block;
+  margin: 5px;
+  background-size: 100%;
+  transition: 0.5s;
+  background-position: center;
+}
+
+.textHover:hover {
+  background-size: 110%;
+}
+
+.textHover:after {
+  position: absolute;
+  top: 90%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: hidden;
+  background-color: rgba(50, 50, 50, 0.25);
+  color: white;
+  padding: 0 5px;
+
+  content: attr(data-text);
+  transition: 0.5s;
+}
+
+.textHover:hover:after {
+  top: 0;
+  padding: 10px;
+  background-color: rgba(50, 50, 50, 0.75);
+}
+
+.textHover:first-line {
+  color: white;
+  font-weight: bold;
+  font-size: 5em;
 }
