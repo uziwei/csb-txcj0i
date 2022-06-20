@@ -37,8 +37,7 @@ nav {
 
 nav ul {
   float: right;
-  padding-top: 77px;
-  padding-right: 100px;
+  margin: 93px 100px 0px 0px;
   transition: 1s;
 }
 
@@ -80,8 +79,12 @@ nav li:hover {
     margin: 9.5px 0px 0px 4px;
   }
 
+  #logo:hover {
+    transform: translateX(0px);
+  }
+
   nav ul {
-    padding: 0px 12% 0px 0px;
+    margin: 17px 12% 0px 0px;
   }
 
   nav li {
@@ -99,7 +102,6 @@ nav li:hover {
 }
 
 #mapImage {
-  grid-area: map;
   margin-top: 30px;
   max-width: 90%;
   transition: 1s;
@@ -111,7 +113,7 @@ nav li:hover {
 
 #poi {
   grid-area: poi;
-  padding-top: 15px;
+  margin-top: 15px;
 }
 
 #poiTittle {
@@ -162,32 +164,29 @@ nav li:hover {
 
 .poiImage {
   display: inline-block;
-  position: relative;
+  position: relative; /* ??? */
+  background-position: center;
+  background-size: 105%;
+  margin: 20px 10px 0px 10px;
+  border: 2.5px solid rgb(255, 15, 135);
+  border-radius: 10%;
   height: 200px;
   width: 200px;
-  background-size: 110%;
-  border-radius: 10%;
-  background-position: center;
   transition: 1s;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 20px;
-  border: 2.5px solid rgb(255, 15, 135);
 }
 
 .poiImage:hover {
-  background-size: 105%;
   transform: scale(1.05);
 }
 
 .poiImage:after {
-  content: attr(data-text);
+  content: attr(data-index);
   position: absolute;
   overflow: hidden;
   top: 85%;
-  left: 74%;
-  bottom: -0.5%;
   right: 8%;
+  bottom: -0.5%;
+  left: 74%;
   padding: 5px;
   font-size: 20px;
   font-weight: bold;
@@ -197,20 +196,20 @@ nav li:hover {
 }
 
 .poiImage:hover:after {
-  content: attr(data-text1);
-  top: -0.5%;
-  left: -0.5%;
-  bottom: -0.5%;
-  right: -0.5%;
+  content: attr(data-text);
   border-radius: 10%;
+  top: -0.5%;
+  right: -0.5%;
+  bottom: -0.5%;
+  left: -0.5%;
   font-weight: normal;
   color: rgb(255, 15, 135);
   background-color: rgba(0, 0, 0, 0.9);
 }
 
 footer {
-  padding: 40px 0px 30px 0px;
   grid-area: footer;
+  margin: 40px 0px 30px 0px;
 }
 
 #email {
@@ -219,17 +218,17 @@ footer {
 
 #extra {
   grid-area: extra;
-  padding-right: 40px;
+  margin-right: 40px;
 }
 
 .grid-container-map {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-areas: "header nav nav" "map map map" "poi poi poi" "footer footer footer";
-  min-width: 352px;
-  max-width: 1145px;
   margin-left: auto;
   margin-right: auto;
+  min-width: 352px;
+  max-width: 1145px;
 }
 
 .grid-container-footer {
