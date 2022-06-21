@@ -5,7 +5,7 @@ body {
     rgb(255, 255, 204),
     white
   ); /* sets background color */
-  text-align: center; /* centers all rext */
+  text-align: center; /* centers all text */
   font-family: "Trebuchet MS", Tahoma, sans-serif; /* sets fonts and fallback ones */
 }
 
@@ -24,6 +24,7 @@ header {
 
 #logo {
   margin-top: 40px; /* creates space above logo */
+  width: 200px; /* sets logo width */
   transition: 1s; /* sets how long animation takes to complete */
 }
 
@@ -46,7 +47,7 @@ nav {
 }
 
 nav ul {
-  float: right; /* moves nav bar to the right CHECK IF NECESSARY */
+  float: right; /* moves nav bar to the right */
   margin: 93px 100px 0px 0px; /* adds spacing to the nav from the page edege */
   transition: 1s; /*time it takes for nav bar animation to complete*/
 }
@@ -90,7 +91,7 @@ nav li:hover {
 }
 
 @media screen and (max-width: 940px) {
-  /* runs when screen width is less than 940px CHECKK*/
+  /* runs when screen width is less than 941px */
   #logo {
     margin: 9.5px 0px 0px 4px; /* changes logo spacing from the edges */
   }
@@ -167,7 +168,7 @@ nav li:hover {
 
 .poiImage {
   display: inline-block; /* sets images in a row style*/
-  position: relative; /* sets relative position point to be used by number index */
+  position: relative; /* creates its own set of coordinates at location offset of viewport */
   background-position: center; /* centers image */
   background-size: 105%; /* increases image size */
   margin: 20px 10px 0px 10px; /* creates spaces between images */
@@ -186,7 +187,7 @@ nav li:hover {
   content: attr(
     data-index
   ); /* sets content to be equal to the value of data-index attribute */
-  position: absolute; /* sets absolute position point to be used by the hovered text animation */
+  position: absolute; /* creates on top type positioning which uses nearest parents' element coordinates available */
   overflow: hidden; /* hides any text that appears outside the image perimeters */
   top: 85%; /* sets upper edge coordinate of index box */
   right: 8%; /* sets right edge coordinate of index box */

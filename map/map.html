@@ -2,137 +2,187 @@
 <html lang="en">
   <!-- Credits: Viljamaz-->
   <!-- This head section contains all the invisible information about the page -->
+  <!-- start of head content -->
   <head>
+    <!-- sets character encoding -->
     <meta charset="UTF-8" />
+    <!-- sets viewport width to be equal to screen width -->
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- adds support to legacy browsers -->
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <!-- blocks bots from indexing page in search engines -->
     <meta content="noindex,nofollow" name="robot" />
+    <!-- links external stylesheet -->
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>ACROPOLIS - MAP</title></head
-  ><!-- This body section contains the structure for all the visble content -->
+    <!-- sets page tittle -->
+    <title>ACROPOLIS - MAP</title>
+    <!-- end of head content -->
+  </head>
+  <!-- start of all visible content and sets it as main grid area -->
   <body class="grid-container-map">
+    <!-- header start -->
     <header>
+      <!-- inserts hyperlinked logo -->
       <a href="/home/home.html"
         ><img
           id="logo"
           alt="Logo"
           src="https://i.ibb.co/BLjYt7H/logo33.png"
           title="ACROPOLIS Home"
-          width="200"
       /></a>
+      <!-- end of header -->
     </header>
+    <!-- start of nav bar section -->
     <nav>
+      <!-- start of nav bar -->
       <ul>
+        <!-- sets hyperlinked HOME button -->
         <li><a id="nav1" href="/home/home.html">HOME</a></li>
+        <!-- sets hyperlinked MAP button -->
         <li><a id="nav2" href="/map/map.html">MAP</a></li>
+        <!-- sets hyperlinked ABOUT button -->
         <li><a id="nav3" href="/help/help.html">ABOUT</a></li>
+        <!-- sets Change Language select button section -->
         <li id="nav4">
+          <!-- creates Change Language select element -->
           <select title="Change Language" name="languages">
+            <!-- sets English language select option -->
             <option value="EN">EN</option>
+            <!-- sets Spanish language select option -->
             <option value="ES">ES</option>
+            <!-- end of select element -->
           </select>
+          <!-- end of select button section -->
         </li>
+        <!-- end of nav bar -->
       </ul>
+      <!-- end of nav bar section -->
     </nav>
+    <!-- start of map section -->
     <div id="map">
+      <!-- insets MAP image -->
       <img
         id="mapImage"
         alt="Map"
         src="https://i.ibb.co/LkrSp1K/map.png"
         title="Map"
       />
+      <!-- end of map section -->
     </div>
+    <!-- start of Points of Interest section -->
     <div id="poi">
+      <!-- start of Points of Interest Tittle section -->
       <div id="poiTittle">
+        <!-- sets Points of Interest Tittle -->
         <p>- POINTS OF INTEREST -</p>
+        <!-- end of Points of Interest Tittle section -->
       </div>
+      <!-- Sets HOTEL image location, index and text attributes -->
       <div
         id="poi1"
         class="poiImage"
         data-index="22"
         data-text="Our HOTEL is a 5 STAR experience."
       ></div>
+      <!-- Sets RESTAURANT image location, index and text attributes -->
       <div
         id="poi2"
         class="poiImage"
         data-index="23"
         data-text="Our RESTAURANT is situated next to the hotel by the fountain."
       ></div>
+      <!-- Sets ROLLER COASTER image location, index and text attributes -->
       <div
         id="poi3"
         class="poiImage"
         data-index="4"
         data-text="Our ROLLER COASTER will make you feel the fastest acceleration ever."
       ></div>
+      <!-- Sets CAROUSEL image location, index and text attributes -->
       <div
         id="poi4"
         class="poiImage"
         data-index="10"
         data-text="Our CAROUSEL is a perfect place to take your kids."
       ></div>
+      <!-- Sets LOG RIDES image location, index and text attributes -->
       <div
         id="poi5"
         class="poiImage"
         data-index="5"
         data-text="Our LOG RIDES will refresh you."
       ></div>
+      <!-- Sets BUMPER CARS image location, index and text attributes -->
       <div
         id="poi6"
         class="poiImage"
         data-index="16"
         data-text="Our BUMPER CARS are fast and strong."
       ></div>
+      <!-- Sets GHOST TRAIN image location, index and text attributes -->
       <div
         id="poi7"
         class="poiImage"
         data-index="21"
         data-text="Our GHOST TRAIN is perfect for the ones looking for some thrill."
       ></div>
+      <!-- Sets FERRIS WHEEL image location, index and text attributes -->
       <div
         id="poi8"
         class="poiImage"
         data-index="15"
         data-text="Our FERRIS WHEEL will give you the best views over the park."
       ></div>
+      <!-- Sets WILDLIFE CENTRE image image location, index and text attributes -->
       <div
         id="poi9"
         class="poiImage"
         data-index="7"
         data-text="Our WILDLIFE CENTRE has the most amazing animals on the planet."
       ></div>
+      <!-- Sets PENDULUM RIDE image location, index and text attributes -->
       <div
         id="poi10"
         class="poiImage"
         data-index="1"
         data-text="Our PENDULUM RIDE will make you feel the perfect adrenaline rush."
       ></div>
+      <!-- end of Point of Interest section -->
     </div>
+    <!-- start of footer section and sets it to footer subgrid area -->
     <footer class="grid-container-footer">
+      <!-- start of email section -->
       <div id="email">
-        <!-- INFO SECTION -->
         <ul>
+          <!-- sets email section tittle -->
           <li><b>CONTACT US</b></li>
           <li>
-            <!-- EMAIL -->
+            <!-- sets contact email hyperlink -->
             <a href="mailto:info@acropolis.gg">info@acropolis.gg</a>
           </li>
         </ul>
+        <!-- end of email section -->
       </div>
+      <!-- start of extra info section -->
       <div id="extra">
         <ul>
           <li>
+            <!-- sets extra info section tittle -->
             <b>OTHER INFO</b>
-            <!-- EXTRA INFO LINKS -->
           </li>
           <li>
+            <!-- sets Newsletter hyperlink -->
             <a href="/help/help.html">Newsletter</a>
           </li>
           <li>
+            <!-- sets T&Cs hyperlink -->
             <a href="/help/help.html">T&Cs</a>
           </li>
         </ul>
+        <!-- end of extra info section -->
       </div>
+      <!-- end of footer section -->
     </footer>
-    <br />
+    <!-- end of visible content area -->
   </body>
 </html>
