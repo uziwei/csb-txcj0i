@@ -4,237 +4,254 @@ body {
     rgb(255, 255, 204),
     rgb(255, 255, 204),
     white
-  );
-  text-align: center;
-  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  ); /* sets background color */
+  text-align: center; /* centers all rext */
+  font-family: "Trebuchet MS", Tahoma, sans-serif; /* sets fonts and fallback ones */
 }
 
 li {
-  list-style-type: none;
+  list-style-type: none; /* removes list default styling */
 }
 
 a {
-  text-decoration: none;
-  color: rgb(236, 43, 0);
+  text-decoration: none; /* removes hyperlink default underline */
+  color: rgb(236, 43, 0); /* sets default hyperlink color */
 }
 
 header {
-  grid-area: header;
+  grid-area: header; /* sets header html element as grid header area */
 }
 
 #logo {
-  margin-top: 40px;
-  transition: 1s;
+  margin-top: 40px; /* creates space above logo */
+  transition: 1s; /* sets how long animation takes to complete */
 }
 
 #logo:hover {
-  transform: translateX(25px);
+  transform: translateX(
+    25px
+  ); /* moves logo to the right when mouse hovered over it */
 }
 
 @media screen and (max-width: 400px) {
   #logo:hover {
-    transform: translateX(0px);
+    transform: translateX(
+      0px
+    ); /* disables logo animation when screen size less than 400px*/
   }
 }
 
 nav {
-  grid-area: nav;
+  grid-area: nav; /* sets nav element as nav grid area */
 }
 
 nav ul {
-  float: right;
-  margin: 93px 100px 0px 0px;
-  transition: 1s;
+  float: right; /* moves nav bar to the right CHECK IF NECESSARY */
+  margin: 93px 100px 0px 0px; /* adds spacing to the nav from the page edege */
+  transition: 1s; /*time it takes for nav bar animation to complete*/
 }
 
 nav li {
-  display: inline;
-  border: 2.5px solid black;
-  font-size: 25px;
-  background-color: rgb(255, 255, 95);
+  display: inline; /* makes list to be shown as a row instead of column */
+  border: 2.5px solid black; /* sets each nav button border thickness */
+  font-size: 25px; /* sets nav bar font size */
+  background-color: rgb(255, 255, 95); /* sets nav bar button color filling */
 }
 
 nav li:hover {
-  background-color: rgb(221, 247, 255);
+  background-color: rgb(
+    221,
+    247,
+    255
+  ); /* changes nav bar button color filling when mouse hovered over it */
 }
 
 #nav1 {
-  padding: 0px 25px 2px 25px;
+  padding: 0px 25px 2px 25px; /* sets home button size */
 }
 
 #nav2 {
-  padding: 0px 34px 2px 34px;
+  padding: 0px 34px 2px 34px; /* sets map button size */
 }
 
 #nav3 {
-  padding: 0px 19px 2px 19px;
+  padding: 0px 19px 2px 19px; /* sets ABOUT button size */
 }
 
 #nav4 select {
-  appearance: none; /* Remove default arrow */
-  outline: none;
-  border: 0px;
-  padding: 0px 5px 0px 5px;
-  font-size: 25px;
-  color: rgb(236, 43, 0);
-  background-color: transparent;
+  /* change language button styling */
+  appearance: none; /* Removes default select arrow */
+  outline: none; /* removes default outline border after using the select button */
+  border: 0px; /*removes default button border */
+  padding: 0px 5px 0px 5px; /* increases button size sideways */
+  font-size: 25px; /* sets select font size */
+  color: rgb(236, 43, 0); /* sets select font color */
+  background-color: transparent; /* makes select background transparent */
 }
 
 @media screen and (max-width: 940px) {
+  /* runs when screen width is less than 940px CHECKK*/
   #logo {
-    margin: 9.5px 0px 0px 4px;
+    margin: 9.5px 0px 0px 4px; /* changes logo spacing from the edges */
   }
 
   nav ul {
-    margin: 17px 12% 0px 0px;
+    margin: 17px 12% 0px 0px; /*changes nav bar spacing from the edges */
   }
 
   nav li {
-    display: block;
+    display: block; /* changes nav bar back into column style */
   }
 
   #nav4 {
-    float: right;
-    max-width: 50px;
+    float: right; /* moves change language button to the right */
+    max-width: 50px; /* sets maximum width of lingo button CHECK*/
   }
 }
 
 #map {
-  grid-area: map;
+  grid-area: map; /* sets map image as map grid area */
 }
 
 #mapImage {
-  margin-top: 30px;
-  max-width: 90%;
-  transition: 1s;
+  margin-top: 30px; /* adds space above */
+  max-width: 90%; /* limits width respective to grid width */
+  transition: 1s; /* duration of map animation */
 }
 
 #mapImage:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* increases map size when mouse hovered over it */
 }
 
 #poi {
-  grid-area: poi;
+  grid-area: poi; /* sets poi space as poi grid area */
 }
 
 #poiTittle {
-  margin-top: 20px;
-  font-size: 32px;
-  font-weight: bold;
-  color: rgb(255, 15, 135);
+  margin-top: 20px; /* adds space above poi title */
+  font-size: 32px; /* sets title font size */
+  font-weight: bold; /* sets bold font */
+  color: rgb(255, 15, 135); /* sets font color */
 }
 
 #poi1 {
-  background-image: url(https://i.ibb.co/FnDkSzM/hotel.jpg);
+  background-image: url(https://i.ibb.co/FnDkSzM/hotel.jpg); /* inserts HOTEL image */
 }
 
 #poi2 {
-  background-image: url(https://i.ibb.co/52fbfxY/restaurant.jpg);
+  background-image: url(https://i.ibb.co/52fbfxY/restaurant.jpg); /* inserts RESTAURANT image */
 }
 
 #poi3 {
-  background-image: url(https://i.ibb.co/nDpBqyW/rollercoaster.jpg);
+  background-image: url(https://i.ibb.co/nDpBqyW/rollercoaster.jpg); /* inserts ROLLER COASTER image */
 }
 
 #poi4 {
-  background-image: url(https://i.ibb.co/nDGT4g0/carousel.jpg);
+  background-image: url(https://i.ibb.co/nDGT4g0/carousel.jpg); /* inserts CAROUSEL image */
 }
 
 #poi5 {
-  background-image: url(https://i.ibb.co/G90rqHQ/logRides.jpg);
+  background-image: url(https://i.ibb.co/G90rqHQ/logRides.jpg); /* inserts LOG RIDES image */
 }
 
 #poi6 {
-  background-image: url(https://i.ibb.co/mX03vJZ/bumper-Cars.jpg);
+  background-image: url(https://i.ibb.co/mX03vJZ/bumper-Cars.jpg); /* inserts BUMPER CARS image */
 }
 
 #poi7 {
-  background-image: url(https://i.ibb.co/pjfkdn6/ghost-Train.jpg);
+  background-image: url(https://i.ibb.co/pjfkdn6/ghost-Train.jpg); /* inserts GHOST TRAIN image */
 }
 
 #poi8 {
-  background-image: url(https://i.ibb.co/YRsqnFF/ferris-Wheeljpg.jpg);
+  background-image: url(https://i.ibb.co/YRsqnFF/ferris-Wheeljpg.jpg); /* inserts FERRIS WHEEL image */
 }
 
 #poi9 {
-  background-image: url(https://i.ibb.co/pPBq4J4/wildlife-Centre.jpg);
+  background-image: url(https://i.ibb.co/pPBq4J4/wildlife-Centre.jpg); /* inserts WILDLIFE CENTRE image */
 }
 
 #poi10 {
-  background-image: url(https://i.ibb.co/vHfJt8h/pendulum-Ride.jpg);
+  background-image: url(https://i.ibb.co/vHfJt8h/pendulum-Ride.jpg); /* inserts PENDULUM RIDE image */
 }
 
 .poiImage {
-  display: inline-block;
-  position: relative; /* ??? */
-  background-position: center;
-  background-size: 105%;
-  margin: 20px 10px 0px 10px;
-  border: 2.5px solid rgb(255, 15, 135);
-  border-radius: 10%;
-  height: 200px;
-  width: 200px;
-  transition: 1s;
+  display: inline-block; /* sets images in a row style*/
+  position: relative; /* sets relative position point to be used by number index */
+  background-position: center; /* centers image */
+  background-size: 105%; /* increases image size */
+  margin: 20px 10px 0px 10px; /* creates spaces between images */
+  border: 2.5px solid rgb(255, 15, 135); /* sets image border */
+  border-radius: 10%; /* sets image circular corner */
+  height: 200px; /* sets image width */
+  width: 200px; /* sets image height */
+  transition: 1s; /* sets animation duration*/
 }
 
 .poiImage:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* increase image size when hovered over */
 }
 
 .poiImage:after {
-  content: attr(data-index);
-  position: absolute;
-  overflow: hidden;
-  top: 85%;
-  right: 8%;
-  bottom: -0.5%;
-  left: 74%;
-  padding: 5px;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  background-color: rgb(255, 15, 135);
-  transition: 1s;
+  content: attr(
+    data-index
+  ); /* sets content to be equal to the value of data-index attribute */
+  position: absolute; /* sets absolute position point to be used by the hovered text animation */
+  overflow: hidden; /* hides any text that appears outside the image perimeters */
+  top: 85%; /* sets upper edge coordinate of index box */
+  right: 8%; /* sets right edge coordinate of index box */
+  bottom: -0.5%; /* sets lower edge coordinate of index box */
+  left: 74%; /* sets left edge coordinate of index box */
+  padding: 5px; /* sets index padding */
+  font-size: 20px; /* sets font size */
+  font-weight: bold; /* sets bold font */
+  color: white; /* sets text color */
+  background-color: rgb(255, 15, 135); /* sets index box color */
+  transition: 1s; /* sets animation duration*/
 }
 
 .poiImage:hover:after {
   content: attr(data-text);
-  border-radius: 10%;
-  top: -0.5%;
-  right: -0.5%;
-  bottom: -0.5%;
-  left: -0.5%;
-  font-weight: normal;
-  color: rgb(255, 15, 135);
-  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10%; /* sets expanded text box circular corner */
+  top: -0.5%; /* sets upper edge coordinate of expanded text box */
+  right: -0.5%; /* sets upper edge coordinate of expanded text box */
+  bottom: -0.5%; /* sets upper edge coordinate of expanded text box */
+  left: -0.5%; /* sets upper edge coordinate of expanded text box */
+  font-weight: normal; /* sets normal font */
+  color: rgb(255, 15, 135); /* sets font color */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.9
+  ); /* sets color and opacity of expanded text box*/
 }
 
 footer {
-  grid-area: footer;
-  margin: 40px 0px 30px 0px;
+  grid-area: footer; /* sets footer element as footer grid area */
+  margin: 40px 0px 30px 0px; /* sets margin spacing over and under footer area */
 }
 
 #email {
-  grid-area: email;
+  grid-area: email; /* sets email object as email grid area */
 }
 
 #extra {
-  grid-area: extra;
-  margin-right: 40px;
+  grid-area: extra; /* sets extra object as extra grid area */
+  margin-right: 40px; /* moves extra to the left */
 }
 
 .grid-container-map {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-areas: "header nav nav" "map map map" "poi poi poi" "footer footer footer";
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 352px;
-  max-width: 1145px;
+  display: grid; /* sets map page body as a grid layout */
+  grid-template-columns: auto auto auto; /* sets how many rows and their size */
+  grid-template-areas: "header nav nav" "map map map" "poi poi poi" "footer footer footer"; /* sets grid desired configuration */
+  margin-left: auto; /* centers all the grid with its contents */
+  margin-right: auto; /* centers all the grid with its contents */
+  min-width: 352px; /* sets grid minimum width */
+  max-width: 1145px; /* sets grid maximum width */
 }
 
 .grid-container-footer {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-areas: "email extra";
+  display: grid; /* sets footer element as subgrid of map grid */
+  grid-template-columns: auto auto; /* sets how many rows and their size */
+  grid-template-areas: "email extra"; /* sets grid desired configuration */
 }
