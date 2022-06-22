@@ -10,29 +10,60 @@
     <title>ACROPOLIS - HOME</title>
   </head>
   <body class="grid-container-map">
-    <header class="header">
-      <img src="/resources/logo.png" alt="Acropolis Theme Park" width="200" />
-      <!--Credits to Ricardo for providing the original image-->
+    <header>
+      <!-- inserts hyperlinked logo -->
+      <a href="/home/home.html"
+        ><img
+          id="logo"
+          alt="Logo"
+          src="https://i.ibb.co/BLjYt7H/logo33.png"
+          title="ACROPOLIS Home"
+          /></a>
+          <!--Credits to Ricardo for providing the original image-->
+      
+      <!-- end of header content -->
     </header>
-    <nav class="menu">
+      
+    <nav>
+      <!-- start of Nav Bar -->
       <ul>
-        <li><a href="/home/home.html">HOME</a></li>
-        <li><a href="/map/map.html">MAP</a></li>
-        <li><a href="/help/help.html">HELP</a></li>
-        <li>
-          <select name="languages" id="languages">
+        <!-- creates hyperlinked HOME button -->
+        <li><a id="nav1" href="/home/home.html">HOME</a></li>
+        <!-- creates hyperlinked MAP button -->
+        <li><a id="nav2" href="/map/map.html">MAP</a></li>
+        <!-- creates hyperlinked ABOUT button -->
+        <li><a id="nav3" href="/about/about.html">ABOUT</a></li>
+        <!-- start of Change Language select element section -->
+        <li id="nav4">
+          <!-- start of Change Language select element -->
+          <select title="Change Language" name="languages">
+            <!-- creates English language select option -->
             <option value="EN">EN</option>
+            <!-- creates Spanish language select option -->
             <option value="ES">ES</option>
+            <!-- end of select element -->
           </select>
+          <!-- end of select element section -->
         </li>
+        <!-- end of Nav Bar -->
       </ul>
+      <!-- end of Nav Bar section -->
     </nav>
+    <img
+      id="imageBanner"
+      class="banner"
+      src="https://upload.wikimedia.org/wikipedia/commons/3/37/%E5%90%88%E8%82%A5%E4%B8%87%E8%BE%BE%E4%B9%90%E5%9B%AD%E7%99%BD%E9%BE%99%E9%A3%9E%E5%A4%A9%E8%BF%87%E5%B1%B1%E8%BD%A6%E9%92%9D%E8%BD%A8%E8%BD%AC%E8%BE%99%E5%99%A8.gif"
+      alt="Roller Coaster Rail Change - Animated"
+      width="1220"
+    />
+    <!--
     <img
       class="banner"
       src="https://upload.wikimedia.org/wikipedia/commons/3/37/%E5%90%88%E8%82%A5%E4%B8%87%E8%BE%BE%E4%B9%90%E5%9B%AD%E7%99%BD%E9%BE%99%E9%A3%9E%E5%A4%A9%E8%BF%87%E5%B1%B1%E8%BD%A6%E9%92%9D%E8%BD%A8%E8%BD%AC%E8%BE%99%E5%99%A8.gif"
       alt="Roller Coaster Rail Change - Animated"
       width="1220"
     />
+    -->
     <div class="booking" id="booking">
       <!--Booking Division START-->
       <label for="fromDate">From</label>
@@ -76,7 +107,7 @@
       <!--Developer note: The inputs do not send anything to anywhere yet-->
       <!--Booking User Input END-->
 
-      <a href="/help/help.html" class="book">BOOK NOW</a>
+      <a href="/about/about.html" class="book">BOOK NOW</a>
       <!--Developer note: Clicking BOOK NOW takes the visitor to help-->
     </div>
     <!--Booking Division END-->
@@ -99,7 +130,7 @@ to save more with our awesome deals">
           data-text="Multiple Ride Package
 Save time and money by buying your ride tickets ahead of time"
         ></div></a>
-      <a href="/help/help.html">
+      <a href="/about/about.html">
         <div
           id="image2"
           class="textHover"
@@ -117,7 +148,7 @@ See the local sites outside the park opening hours">
 
     </div>
   </body>
-  <footer class="grid-footer">
+  <footer class="grid-container-footer">
     <ul class="contact">
       CONTACT US
       <li id="email">
