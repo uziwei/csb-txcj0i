@@ -1,163 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
   <!-- Credits: Viljamaz-->
-  <!-- This head section contains all the invisible information about the page -->
+  <!-- start of Head section which contains all the invisible information about the page -->
   <head>
+    <!-- sets character encoding -->
     <meta charset="UTF-8" />
+    <!-- sets viewport width to be equal to screen width -->
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- adds support to legacy browsers -->
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <!-- blocks bots from indexing page in search engines -->
     <meta content="noindex,nofollow" name="robot" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>ACROPOLIS - MAP</title></head
-  ><!-- This body section contains the structure for all the visble content -->
+    <!-- links external stylesheet -->
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+    <!-- sets page tittle -->
+    <title>ACROPOLIS - MAP</title>
+    <!-- end of Head section -->
+  </head>
+  <!-- start of Body section which contains all the visible information and sets it as Main Grid area -->
   <body class="grid-container-map">
+    <!-- start of Header content -->
     <header>
-      <a href="/home/home.html" id="logo"
+      <!-- inserts hyperlinked Logo -->
+      <a href="/home/home.html"
         ><img
-          id="logoImage"
-          alt="Logo"
+          id="logo"
+          alt="LOGO"
           src="https://i.ibb.co/BLjYt7H/logo33.png"
           title="ACROPOLIS Home"
-          width="200"
       /></a>
+      <!-- end of Header content -->
     </header>
+    <!-- start of Nav Bar section -->
     <nav>
+      <!-- start of Nav Bar -->
       <ul>
-        <li><a href="/home/home.html">HOME</a></li>
+        <!-- creates hyperlinked HOME button -->
+        <li><a id="nav1" href="/home/home.html">HOME</a></li>
+        <!-- creates hyperlinked MAP button -->
         <li><a id="nav2" href="/map/map.html">MAP</a></li>
-        <li><a id="nav3" href="//about/about.html">ABOUT</a></li>
+        <!-- creates hyperlinked ABOUT button -->
+        <li><a id="nav3" href="/about/about.html">ABOUT</a></li>
+        <!-- start of Change Language Select element section -->
         <li id="nav4">
+          <!-- start of Change Language Select element -->
           <select title="Change Language" name="languages">
+            <!-- creates English language select option -->
             <option value="EN">EN</option>
+            <!-- creates Spanish language select option -->
             <option value="ES">ES</option>
+            <!-- end of Select element -->
           </select>
+          <!-- end of Select element section -->
         </li>
+        <!-- end of Nav Bar -->
       </ul>
+      <!-- end of Nav Bar section -->
     </nav>
+    <!-- start of Map section -->
 
-    <div id="poiSection">
+    <div id="about">
       <!-- POI IMAGE SECTION -->
-      <div class="poi">
-        <h2 class="top">HOTEL</h2>
-        <p>
-          After a fun filled day at Acropolis you may need some time to relax.
-          Our hotel has a historic theme so as you are captivated by all the
-          attractions you can experience the true marvels with all the
-          historical architecture that has to offer and with fun filled
-          entertainment for all the family to enjoy.
-        </p>
-
-        <p>
-          As you walk in you will be greeted with a smile and our friendly
-          concierge will guide you in the right direction. Check-in only takes a
-          couple of minutes. No long ques or waiting especially with the little
-          ones.
-        </p>
-
-        <p>
-          We have educational portal which will transport your little ones to
-          another world where they can learn lots of useful facts which out
-          award winning teaching staff.
-        </p>
-
-        <p>
-          Every room in Acropolis is cleaned daily mornings and evenings with
-          our award-winning housekeeping service. If you need anything our
-          friendly housekeeping team will be happy to help with anything you may
-          need.
-        </p>
-
-        <p>So don’t delay and book your hotel reservations today.</p>
-      </div>
-      <fieldset>
-        <legend>Why not book your stay with us</legend>
-        <form action="http://www.acronnis.com/help/profile.php" method="post">
-          <label for="arrival">Arrival date:</label>
-          <input type=date" name="arrival" />
-          <label for="Departure">Departure date:</label>
-          <input type=date" name="Depart" />
-          <label for="Number">Number of guests:</label>
-          <input type=Number" name="Number" />
-          <input type="submit" value="Reserve my spot" />
-        </form>
-      </fieldset>
-      <img
-        class="imageAnimation"
-        src="/resources/help/hotelLandscape.jpg"
-        alt="Hotel_landscape"
-        width="100%"
-        height="500px"
-      />
-
-      <div class="poi">
-        <h2 class="top">Award winning Customer service</h2>
-        <div class="two_section">
+      <div class="aboutSection">
+        <div id="customer">
           <div>
+            <img
+              class="imageAnimation1"
+              src="https://i.ibb.co/sKdFsWJ/hotel.jpg"
+              alt="Hotel_landscape"
+            />
+          </div>
+          <div>
+            <h2 class="aboutTittles">HOTEL</h2>
+            <p>
+              After a fun filled day at Acropolis you may need some time to
+              relax. Our hotel has a historic theme so as you are captivated by
+              all the attractions you can experience the true marvels with all
+              the historical architecture that has to offer and with fun filled
+              entertainment for all the family to enjoy.
+              </br></br>
+              As you walk in you will be greeted with a smile and our friendly
+              concierge will guide you in the right direction. Check-in only
+              takes a couple of minutes. No long ques or waiting especially with
+              the little ones.
+              </br></br>
+              We have educational portal which will transport your little ones
+              to another world where they can learn lots of useful facts which
+              out award winning teaching staff.
+              </br></br>
+              Every room in Acropolis is cleaned daily mornings and evenings
+              with our award-winning housekeeping service. If you need anything
+              our friendly housekeeping team will be happy to help with anything
+              you may need.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="aboutSection">
+        <div id="customer">
+          <div>
+            <h2 class="aboutTittles">CUSTOMER SERVICE</h2>
             <p>
               At Acropolis we offer a 5-star customer service. Our team is
               highly trained to help everyone with any of your requests. At
               Acropolis we believe a smile and a chat can do wonders. So why not
               come down to any of our help centre booths where we are happy to
               help.
-            </p>
-
-            <p>
+              </br></br>
               Safely is paramount at Acropolis this is why we give everyone a
               risk band which includes a built-in device which in the event a
               family member is lost we will be able to locate your loved ones in
               a speedy second. All risk bands are given to everyone and returned
               when saying goodbye.
-            </p>
-
-            <p>
+              </br></br>
               If that didn’t impress you, we also give out healthy drinks to
               everyone in the park at no extra cost to you. If everyone is not
               hydrated then how can everyone have the experience of a lifetime.
-            </p>
-
-            <p>Come on down and speak to any of our helpful team today.</p>
+              </br></br>
+              Come on down and speak to any of our helpful team today.</p>
           </div>
           <div>
             <img
-              class="imageAnimation"
-              src="/resources/help/customerService.jpg"
+              class="imageAnimation2"
+              src="/resources/about/customerService.jpg"
               alt="Customer Service"
-              width="600px"
-              height="400px"
             />
           </div>
         </div>
       </div>
-      <ul>
-        <li><a href="http://map.html"> Terms and conditions</a></li>
-      </ul>
     </div>
     <footer class="grid-container-footer">
-      <div id="emails">
-        <!-- INFO SECTION -->
+      <!-- start of Email section -->
+      <div id="email">
         <ul>
+          <!-- creates Email section tittle -->
           <li><b>CONTACT US</b></li>
           <li>
-            <!-- EMAIL -->
+            <!-- creates Email hyperlink -->
             <a href="mailto:info@acropolis.gg">info@acropolis.gg</a>
           </li>
         </ul>
+        <!-- end of Email section -->
       </div>
-      <div id="extraInfo">
+      <!-- start of Extra Info section -->
+      <div id="extra">
         <ul>
           <li>
+            <!-- creates Extra Info section tittle -->
             <b>OTHER INFO</b>
-            <!-- EXTRA INFO LINKS -->
           </li>
           <li>
-            <a href="//about/about.html">Newsletter</a>
-          </li>
-          <li>
-            <a href="//about/about.html">T&Cs</a>
+            <!-- creates T&Cs hyperlink -->
+            <a href="/about/about.html">Terms and Conditions</a>
           </li>
         </ul>
+        <!-- end of Extra Info section -->
       </div>
+      <!-- end of Footer section -->
     </footer>
-    <br />
+    <!-- end of visible content area -->
   </body>
 </html>

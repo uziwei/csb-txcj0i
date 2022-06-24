@@ -1,8 +1,7 @@
 body {
   background-image: linear-gradient(
     rgb(0, 195, 255),
-    rgb(255, 255, 204),
-    rgb(255, 255, 204),
+    rgb(235, 235, 235),
     white
   ); /* sets page background color */
   text-align: center; /* centers all the content */
