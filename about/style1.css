@@ -22,7 +22,8 @@ header {
 }
 
 #logo {
-  margin-top: 40px; /* creates space above LOGO Image */
+  float: left;
+  margin: 40px 0px 0px 75px; /* creates space above LOGO Image */
   width: 200px; /* sets LOGO Image width */
   transition: 1s; /* sets how long LOGO Image animation takes to complete */
 }
@@ -47,7 +48,7 @@ nav {
 
 nav ul {
   float: right; /* moves Nav Bar to the right */
-  margin: 93px 100px 0px 0px; /* adds spacing to the Nav Bar from the page edege */
+  margin: 93px 75px 0px 0px; /* adds spacing to the Nav Bar from the page edege */
   transition: 1s; /* time it takes for Nav Bar animation to complete */
 }
 
@@ -113,9 +114,6 @@ nav li:hover {
   padding-top: 15px;
 }
 
-.aboutSection {
-}
-
 .aboutTittles {
   font-size: 43px;
   color: rgb(255, 15, 135);
@@ -144,30 +142,44 @@ p {
   font-size: 19px;
   text-align: justify;
   background-color: rgb(255, 255, 255);
-  min-width: 489px;
-  max-width: 489px;
   border: 2px solid black;
+  min-height: 453.75px;
+}
+
+#hotel {
+  grid-area: hotel;
+  margin-top: 40px;
+  max-width: 589px;
+  aspect-ratio: 1;
 }
 
 #customer {
+  grid-area: customer;
   margin-top: 40px;
-  display: flex;
-  flex-direction: row;
-
-  justify-content: center;
+  max-width: 589px;
+  aspect-ratio: 1;
 }
 
-#about img {
-  width: 570px;
-  height: 568.15px;
+#hotelImage {
+  grid-area: img1;
+  margin-top: 40px;
 }
 
 .imageAnimation1 {
   animation: expand1 3s ease-in-out forwards;
+  width: 589px;
+  aspect-ratio: 1;
+}
+
+#customerImage {
+  grid-area: img2;
+  margin-top: 40px;
 }
 
 .imageAnimation2 {
   animation: expand2 3s ease-in-out forwards;
+  width: 589px;
+  aspect-ratio: 1;
 }
 
 @keyframes expand1 {
@@ -204,11 +216,11 @@ footer {
 
 .grid-container-map {
   display: grid; /* sets Map Page Body element as Main Grid area */
-  grid-template-columns: auto auto auto; /* sets how many colums in the Main Grid area and their size */
-  grid-template-areas: "header nav nav" "about about about" "footer footer footer"; /* sets Main Grid desired column/row configuration */
+  grid-template-columns: auto auto; /* sets how many colums in the Main Grid area and their size */
+  grid-template-areas: "header nav" "img1 hotel" "customer img2" "footer footer"; /* sets Main Grid desired column/row configuration */
   margin-left: auto; /* centers Main Grid with its contents */
   margin-right: auto; /* centers Main Grid with its contents */
-  min-width: 352px; /* sets Main Grid minimum width */
+  min-width: 1145px; /* sets Main Grid minimum width */
   max-width: 1145px; /* sets Main Grid maximum width */
 }
 
@@ -216,4 +228,50 @@ footer {
   display: grid; /* sets Footer element as Subgrid of Map Main Grid */
   grid-template-columns: auto auto; /* sets how many colums in the Footer Grid area and their size */
   grid-template-areas: "email extra"; /* sets Footer Grid desired column/row configuration */
+}
+
+@media screen and (max-width: 1195px) {
+  .grid-container-map {
+    display: grid; /* sets Map Page Body element as Main Grid area */
+    grid-template-columns: auto auto; /* sets how many colums in the Main Grid area and their size */
+    grid-template-areas: "header nav" "hotel hotel" "img1 img1" "customer customer" "img2 img2" "footer footer"; /* sets Main Grid desired column/row configuration */
+    margin-left: auto; /* centers Main Grid with its contents */
+    margin-right: auto; /* centers Main Grid with its contents */
+    min-width: 590px; /* sets Main Grid minimum width */
+    max-width: 590px; /* sets Main Grid maximum width */
+  }
+
+  #logo {
+    margin: 9.5px 0px 0px 4px; /* changes LOGO Image spacing from the edges */
+  }
+
+  nav ul {
+    margin: 17px 12% 0px 0px; /* changes Nav Bar spacing from the edges */
+  }
+
+  nav li {
+    display: block; /* changes Nav Bar back into column style */
+  }
+
+  #nav4 {
+    float: right; /* moves Change language Select button to the right */
+  }
+  @keyframes expand1 {
+    0% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes expand2 {
+    0% {
+      transform: translateX(0px);
+    }
+  }
+  #hotelImage {
+    margin-top: 0px;
+  }
+
+  #customerImage {
+    margin-top: 0px;
+  }
 }

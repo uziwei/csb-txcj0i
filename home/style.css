@@ -1,16 +1,12 @@
 body {
-  background-image: linear-gradient(
-    rgb(0, 195, 255),
-    rgb(255, 255, 204),
-    rgb(255, 255, 204),
-    white
-  ); /* sets background color */
+  background-image: linear-gradient(rgb(0, 0, 0)); /* sets background color */
   text-align: center; /* centers all the content */
   font-family: "Trebuchet MS", Tahoma, sans-serif; /* sets main font and fallback ones */
+  margin: 0;
 }
 
 h1 {
-  color: rgb(255, 15, 135);
+  color: rgb(255, 251, 0);
 }
 
 li {
@@ -23,11 +19,14 @@ a {
 }
 
 header {
-  grid-area: header; /* sets header html element as grid header area */
+  background-color: rgb(254, 135, 74);
+  grid-area: header;
+  max-width: 250px; /* sets header html element as grid header area */
 }
 
 #logo {
-  margin-top: 40px; /* creates space above logo */
+  float: left;
+  margin: 20px 0px 20px 5px; /* creates space above logo */
   width: 200px; /* sets logo width */
   transition: 1s; /* sets how long animation takes to complete */
 }
@@ -47,12 +46,15 @@ header {
 }
 
 nav {
+  margin-left: 100px;
+  width: 900px;
   grid-area: nav; /* sets nav element as nav grid area */
+  background-color: rgb(125, 127, 255);
 }
 
 nav ul {
   float: right; /* moves nav bar to the right */
-  margin: 93px 100px 0px 0px; /* adds spacing to the nav from the page edege */
+  margin: 90px 50px 0px 0px; /* adds spacing to the nav from the page edege */
   transition: 1s; /*time it takes for nav bar animation to complete*/
 }
 
@@ -114,14 +116,27 @@ nav li:hover {
   }
 }
 
+#imageBanner {
+  margin-top: 0px;
+  max-width: 100%;
+}
+
 .offersClass {
   grid-area: offers;
-  padding-top: 15px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#offers {
+  background-color: rgb(125, 127, 255);
+  margin: 0;
+  padding: 5px;
 }
 
 .bookButton {
-  padding: 7.5px;
+  padding: 10px;
   border: 1px solid black;
+  font-size: 20px;
   background-color: rgb(255, 255, 95);
 }
 
@@ -137,10 +152,10 @@ nav li:hover {
   max-height: 100%;
 
   font-size: 20px;
-  color: rgb(236, 43, 0);
-  background-color: rgb(255, 255, 95);
+  color: black;
+  background-color: white;
   outline: 1px;
-  padding: 0px 5px 0px 5px;
+  padding: 10px;
 }
 
 .banner {
@@ -165,12 +180,13 @@ nav li:hover {
 
 .textHover {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 296px;
+  height: 296px;
   /* remove float: center; */
-
+  border: 0;
   display: inline-block;
-  margin: 5px;
+  margin: 0;
+  padding: 0;
   background-size: 100%;
   transition: 0.5s;
   background-position: center;
@@ -225,11 +241,11 @@ footer {
 .grid-container-map {
   display: grid; /* sets map page body as a grid layout */
   grid-template-columns: auto auto auto auto; /* sets how many rows and their size */
-  grid-template-areas: "header nav" "banner  banner" "booking booking" "offers offers" "footer footer"; /* sets grid desired configuration */
+  grid-template-areas: "header nav nav nav" "banner banner banner banner" "booking booking booking booking" "offers offers offers offers" "footer footer footer footer"; /* sets grid desired configuration */
   margin-left: auto; /* centers all the grid with its contents */
   margin-right: auto; /* centers all the grid with its contents */
   min-width: 352px; /* sets grid minimum width */
-  max-width: 1145px; /* sets grid maximum width */
+  max-width: 1200px; /* sets grid maximum width */
 }
 
 .grid-container-footer {

@@ -47,7 +47,7 @@ nav {
 
 nav ul {
   float: right; /* moves Nav Bar to the right */
-  margin: 93px 100px 0px 0px; /* adds spacing to the Nav Bar from the page edege */
+  margin: 93px 75px 0px 0px; /* adds spacing to the Nav Bar from the page edege */
   transition: 1s; /* time it takes for Nav Bar animation to complete */
 }
 
