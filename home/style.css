@@ -1,5 +1,5 @@
 html {
-  height: 100%;
+  min-height: 100vh;
   box-sizing: border-box;
 }
 
@@ -215,7 +215,7 @@ nav li:hover {
 .grid-container-map {
   display: grid; /* sets map page body as a grid layout */
   grid-template-columns: auto auto auto auto; /* sets how many rows and their size */
-  grid-template-areas: "banner banner banner banner" "offers offers offers offers" "offer offer offer offer"; /* sets grid desired configuration */
+  grid-template-areas: "banner banner banner banner" "offers offers offers offers" "offer offer offer offer" "footer footer footer footer"; /* sets grid desired configuration */
   margin-left: auto; /* centers all the grid with its contents */
   margin-right: auto; /* centers all the grid with its contents */
   min-width: 352px; /* sets grid minimum width */
@@ -248,11 +248,7 @@ nav li:hover {
 
 footer {
   background-color: rgb(255, 228, 73);
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
+  grid-area: footer;
   margin-bottom: 100px;
   padding: 20px 0px 20px 0px; /* sets margin spacing over and under footer area */
   margin-left: auto; /* centers all the grid with its contents */
