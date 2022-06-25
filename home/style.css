@@ -1,12 +1,12 @@
 body {
-  background-image: linear-gradient(rgb(0, 0, 0)); /* sets background color */
+  background-color: rgb(245, 245, 245); /* sets background color */
   text-align: center; /* centers all the content */
   font-family: "Trebuchet MS", Tahoma, sans-serif; /* sets main font and fallback ones */
   margin: 0;
 }
 
 h1 {
-  color: rgb(255, 251, 0);
+  color: white;
 }
 
 li {
@@ -15,19 +15,20 @@ li {
 
 a {
   text-decoration: none; /* removes hyperlink default underline */
-  color: rgb(236, 43, 0); /* sets default hyperlink color */
+  color: black; /* sets default hyperlink color */
 }
 
 header {
-  background-color: rgb(254, 135, 74);
+  background-color: rgb(255, 228, 73);
   grid-area: header;
-  max-width: 250px; /* sets header html element as grid header area */
+
+  /* sets header html element as grid header area */
 }
 
 #logo {
   float: left;
-  margin: 20px 0px 20px 5px; /* creates space above logo */
-  width: 200px; /* sets logo width */
+  margin: 12px 0px 5px 10px; /* creates space above logo */
+  width: 135px; /* sets logo width */
   transition: 1s; /* sets how long animation takes to complete */
 }
 
@@ -46,43 +47,35 @@ header {
 }
 
 nav {
-  margin-left: 100px;
-  width: 900px;
-  grid-area: nav; /* sets nav element as nav grid area */
-  background-color: rgb(125, 127, 255);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: rgb(255, 228, 73);
+  z-index: 1;
 }
 
 nav ul {
   float: right; /* moves nav bar to the right */
-  margin: 90px 50px 0px 0px; /* adds spacing to the nav from the page edege */
-  transition: 1s; /*time it takes for nav bar animation to complete*/
+  margin: 30px 10px 0px 0px; /* adds spacing to the nav from the page edege */
+  transition: 1s;
+  /*time it takes for nav bar animation to complete*/
 }
 
 nav li {
   display: inline; /* makes list to be shown as a row instead of column */
-  border: 2.5px solid black; /* sets each nav button border thickness */
-  font-size: 25px; /* sets nav bar font size */
-  background-color: rgb(255, 255, 95); /* sets nav bar button color filling */
+  border: 0px; /* sets each nav button border thickness */
+  font-size: 30px; /* sets nav bar font size */
+  margin-right: 20px;
+  padding: 10px 0px 32px 0px;
+  background-color: rgb(black); /* sets nav bar button color filling */
+}
+
+nav li a {
+  padding: 10px 10px 32px 10px;
 }
 
 nav li:hover {
-  background-color: rgb(
-    221,
-    247,
-    255
-  ); /* changes nav bar button color filling when mouse hovered over it */
-}
-
-#nav1 {
-  padding: 0px 25px 2px 25px; /* sets home button size */
-}
-
-#nav2 {
-  padding: 0px 34px 2px 34px; /* sets map button size */
-}
-
-#nav3 {
-  padding: 0px 19px 2px 19px; /* sets ABOUT button size */
+  border-bottom: 4px solid black; /* changes nav bar button color filling when mouse hovered over it */
 }
 
 #nav4 select {
@@ -96,7 +89,7 @@ nav li:hover {
   background-color: transparent; /* makes select background transparent */
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 640px) {
   /* runs when screen width is less than 941px */
   #logo {
     margin: 9.5px 0px 0px 4px; /* changes logo spacing from the edges */
@@ -117,8 +110,21 @@ nav li:hover {
 }
 
 #imageBanner {
+  grid-area: banner;
+  padding: 0px;
+
   margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#imageBa {
   max-width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
 }
 
 .offersClass {
@@ -128,9 +134,13 @@ nav li:hover {
 }
 
 #offers {
-  background-color: rgb(125, 127, 255);
+  transform: translateY(-10px);
+  background-color: rgb(52, 123, 255);
   margin: 0;
-  padding: 5px;
+  padding: 5px 0px 5px 0px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bookButton {
@@ -141,10 +151,13 @@ nav li:hover {
 }
 
 .booking {
-  grid-area: booking;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
   font-family: "Trebuchet MS", sans-serif;
   padding: 25px;
-  background-color: rgb(254, 135, 74);
+  background-color: rgb(52, 123, 255);
+  z-index: 1;
 }
 
 #guestsBooking {
@@ -156,10 +169,6 @@ nav li:hover {
   background-color: white;
   outline: 1px;
   padding: 10px;
-}
-
-.banner {
-  grid-area: banner;
 }
 
 #image0 {
@@ -180,8 +189,8 @@ nav li:hover {
 
 .textHover {
   position: relative;
-  width: 296px;
-  height: 296px;
+  width: 296.5px;
+  height: 297.5px;
   /* remove float: center; */
   border: 0;
   display: inline-block;
@@ -225,8 +234,17 @@ nav li:hover {
 }
 
 footer {
+  background-color: rgb(255, 228, 73);
   grid-area: footer; /* sets footer element as footer grid area */
-  margin: 40px 0px 30px 0px; /* sets margin spacing over and under footer area */
+  margin: 0px;
+  margin-bottom: 100px;
+  padding: 20px 0px 20px 0px; /* sets margin spacing over and under footer area */
+  margin-left: auto; /* centers all the grid with its contents */
+  margin-right: auto; /* centers all the grid with its contents */
+}
+
+footer a {
+  color: rgb(236, 43, 0);
 }
 
 #email {
@@ -236,20 +254,39 @@ footer {
 #extra {
   grid-area: extra; /* sets extra object as extra grid area */
   margin-right: 40px; /* moves extra to the left */
+  max-width: 50px;
 }
 
 .grid-container-map {
   display: grid; /* sets map page body as a grid layout */
   grid-template-columns: auto auto auto auto; /* sets how many rows and their size */
-  grid-template-areas: "header nav nav nav" "banner banner banner banner" "booking booking booking booking" "offers offers offers offers" "footer footer footer footer"; /* sets grid desired configuration */
+  grid-template-areas: "nav nav nav nav" "banner banner banner banner" "offers offers offers offers" "booking booking booking booking" "footer footer footer footer"; /* sets grid desired configuration */
   margin-left: auto; /* centers all the grid with its contents */
   margin-right: auto; /* centers all the grid with its contents */
   min-width: 352px; /* sets grid minimum width */
-  max-width: 1200px; /* sets grid maximum width */
+  max-width: 100%; /* sets grid maximum width */
 }
 
 .grid-container-footer {
   display: grid; /* sets footer element as subgrid of map grid */
   grid-template-columns: auto auto; /* sets how many rows and their size */
   grid-template-areas: "email extra"; /* sets grid desired configuration */
+  margin-left: auto; /* centers all the grid with its contents */
+  margin-right: auto; /* centers all the grid with its contents */
+}
+
+.contact {
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+.info {
+  margin-right: auto;
+  margin-left: 100px;
+}
+
+#control {
+  max-width: 1200px;
+  margin-left: auto; /* centers all the grid with its contents */
+  margin-right: auto; /* centers all the grid with its contents */
 }

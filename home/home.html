@@ -10,29 +10,25 @@
     <title>ACROPOLIS - HOME</title>
   </head>
   <body class="grid-container-map">
-    <header>
-      <!-- inserts hyperlinked logo -->
-      <a href="/home/home.html"
+    
+      
+    <nav>
+      <div id="control">
+        <a href="/home/home.html"
         ><img
           id="logo"
           alt="Logo"
           src="https://i.ibb.co/BLjYt7H/logo33.png"
           title="ACROPOLIS Home"
           /></a>
-          <!--Credits to Ricardo for providing the original image-->
-      
-      <!-- end of header content -->
-    </header>
-      
-    <nav>
       <!-- start of Nav Bar -->
       <ul>
         <!-- creates hyperlinked HOME button -->
-        <li><a id="nav1" href="/home/home.html">HOME</a></li>
+        <li><a id="nav1" href="/home/home.html">Home</a></li>
         <!-- creates hyperlinked MAP button -->
-        <li><a id="nav2" href="/map/map.html">MAP</a></li>
+        <li><a id="nav2" href="/map/map.html">Map</a></li>
         <!-- creates hyperlinked ABOUT button -->
-        <li><a id="nav3" href="/about/about.html">ABOUT</a></li>
+        <li><a id="nav3" href="/about/about.html">About</a></li>
         <!-- start of Change Language select element section -->
         <li id="nav4">
           <!-- start of Change Language select element -->
@@ -48,25 +44,27 @@
         <!-- end of Nav Bar -->
       </ul>
       <!-- end of Nav Bar section -->
+    </div>
     </nav>
-    <img
-      id="imageBanner"
-      class="banner"
+    <div id="imageBanner">
+    <img id ="imageBa"
+    width= "1200px";
       src="https://upload.wikimedia.org/wikipedia/commons/3/37/%E5%90%88%E8%82%A5%E4%B8%87%E8%BE%BE%E4%B9%90%E5%9B%AD%E7%99%BD%E9%BE%99%E9%A3%9E%E5%A4%A9%E8%BF%87%E5%B1%B1%E8%BD%A6%E9%92%9D%E8%BD%A8%E8%BD%AC%E8%BE%99%E5%99%A8.gif"
       alt="Roller Coaster Rail Change - Animated"
-      width="1220"
     />
-    
+  </div>
     <div class="booking" id="booking">
       <!--Booking Division START-->
       <label for="fromDate">From</label>
+      <!--Creates date selector-->
       <input type="date" id="guestsBooking" />
       -
       <label for="toDate">to</label>
       <input type="date" id="guestsBooking" />
 
       <label for="guestsAdults">Adults</label>
-      <select id="guestsBooking">
+      <!--Creates dropdown select menu for adult guests-->
+      <select id="guestsBooking" alt="Select number of adult guests">
         <option value=""> -- </option>
         <option value="1"> 1 </option>
         <option value="2"> 2 </option>
@@ -79,7 +77,8 @@
         <option value="9"> 9 </option>
       </select>
 
-      <label for="guestsKids">Kids</label>
+      <label for="guestsKids" alt="Select number of child guests">Kids</label>
+      <!--Creates dropdown select menu for young guests-->
       <select id="guestsBooking">
         <option value=""> -- </option>
         <option value="1"> 1 </option>
@@ -90,8 +89,9 @@
         <option value="6"> 6 </option>
       </select>
 
+      <!--Creates dropdown select menu for number of rooms-->
       <label for="guestsRooms">Rooms</label>
-      <select id="guestsBooking">
+      <select id="guestsBooking" alt="Select number of rooms">
         <option value=""> -- </option>
         <option value="1"> 1 </option>
         <option value="2"> 2 </option>
@@ -140,9 +140,11 @@ See the local sites outside the park opening hours">
       </li>
     </ul>
     <ul class="info">
+      <div "infoBox">
       <b>OTHER INFO</b>
 
       <li><a href="/">Terms and Conditions</a></li>
+      </div>
     </ul>
   </footer>
 </html>
