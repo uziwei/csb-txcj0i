@@ -1,8 +1,21 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: rgb(245, 245, 245); /* sets background color */
   text-align: center; /* centers all the content */
   font-family: "Trebuchet MS", Tahoma, sans-serif; /* sets main font and fallback ones */
+  position: relative;
   margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -171,96 +184,38 @@ nav li:hover {
   padding: 10px;
 }
 
-#image0 {
-  background-image: url(/resources/offers/offer.jpg);
+#offer {
+  grid-area: offer;
 }
 
-#image1 {
-  background-image: url(/resources/map/poi/rollerCoaster.jpg);
-}
-
-#image2 {
-  background-image: url(/resources/map/poi/hotel.jpg);
-}
-
-#image3 {
-  background-image: url(/resources/acropolis.jpg);
-}
-
-.textHover {
-  position: relative;
-  width: 296.5px;
-  height: 297.5px;
-  /* remove float: center; */
-  border: 0;
-  display: inline-block;
-  margin: 0;
+#offer ul {
   padding: 0;
-  background-size: 100%;
-  transition: 0.5s;
-  background-position: center;
 }
 
-.textHover:hover {
-  background-size: 110%;
+#offer img {
+  max-width: 100%;
 }
 
-.textHover:after {
-  position: absolute;
-  top: 90%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  overflow: hidden;
-  background-color: rgba(50, 50, 50, 0.25);
-  color: white;
-  padding: 0 5px;
-  content: attr(data-text);
-  transition: 0.5s;
-}
-
-.textHover:hover:after {
-  top: 0;
-  padding: 10px;
-  background-color: rgba(50, 50, 50, 0.75);
-}
-
-.textHover:first-line {
-  color: white;
-  font-weight: bold;
-  font-size: 5em;
-}
-
-footer {
-  background-color: rgb(255, 228, 73);
-  grid-area: footer; /* sets footer element as footer grid area */
-  margin: 0px;
-  margin-bottom: 100px;
-  padding: 20px 0px 20px 0px; /* sets margin spacing over and under footer area */
+#offer {
+  display: grid;
+  grid-template-columns: auto auto auto auto; /* sets how many rows and their size */
+  max-width: 1200px;
   margin-left: auto; /* centers all the grid with its contents */
   margin-right: auto; /* centers all the grid with its contents */
 }
 
-footer a {
-  color: rgb(236, 43, 0);
+#oferta1 {
+  max-width: 300px;
 }
 
-#email {
-  grid-area: email; /* sets email object as email grid area */
-}
-
-#extra {
-  grid-area: extra; /* sets extra object as extra grid area */
-  margin-right: 40px; /* moves extra to the left */
-  max-width: 50px;
+#oferta1 p {
+  max-width: 100%;
 }
 
 .grid-container-map {
   display: grid; /* sets map page body as a grid layout */
   grid-template-columns: auto auto auto auto; /* sets how many rows and their size */
-  grid-template-areas: "nav nav nav nav" "banner banner banner banner" "offers offers offers offers" "booking booking booking booking" "footer footer footer footer"; /* sets grid desired configuration */
+  grid-template-areas: "banner banner banner banner" "offers offers offers offers" "offer offer offer offer"; /* sets grid desired configuration */
   margin-left: auto; /* centers all the grid with its contents */
   margin-right: auto; /* centers all the grid with its contents */
   min-width: 352px; /* sets grid minimum width */
@@ -289,4 +244,31 @@ footer a {
   max-width: 1200px;
   margin-left: auto; /* centers all the grid with its contents */
   margin-right: auto; /* centers all the grid with its contents */
+}
+
+footer {
+  background-color: rgb(255, 228, 73);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  margin-bottom: 100px;
+  padding: 20px 0px 20px 0px; /* sets margin spacing over and under footer area */
+  margin-left: auto; /* centers all the grid with its contents */
+  margin-right: auto; /* centers all the grid with its contents */
+}
+
+footer a {
+  color: rgb(236, 43, 0);
+}
+
+#email {
+  grid-area: email; /* sets email object as email grid area */
+}
+
+#extra {
+  grid-area: extra; /* sets extra object as extra grid area */
+  margin-right: 40px; /* moves extra to the left */
+  max-width: 50px;
 }
