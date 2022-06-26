@@ -297,4 +297,5 @@ footer a {
 .info {
   margin-right: auto;
   margin-left: 100px;
+  transform: translateX(-20px);
 }

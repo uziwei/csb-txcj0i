@@ -106,10 +106,6 @@ nav li:hover {
   border-bottom: 4px solid black; /* changes nav bar button color filling when mouse hovered over it */
 }
 
-#nav1 {
-  border-bottom: 4px solid black;
-}
-
 #nav4 {
   margin-right: 0px;
 }
