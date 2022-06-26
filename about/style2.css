@@ -13,7 +13,7 @@ body {
   background-color: rgb(245, 245, 245); /* sets background color */
   position: relative;
   margin: 0;
-  padding-bottom: 186px;
+  padding-bottom: 182.5px;
   min-height: 100%;
   text-align: center;
   font-family: "Trebuchet MS", Tahoma, sans-serif; /* sets main font and fallback ones */
@@ -64,6 +64,10 @@ nav {
   position: fixed;
   top: 0px;
   width: 100%;
+
+  right: 0;
+
+  left: 0;
   background-color: rgb(255, 228, 73);
   z-index: 1;
 }
@@ -126,45 +130,14 @@ nav li:hover {
   }
 }
 
-#imageBanner {
-  grid-area: banner;
-  padding: 0px;
-
-  margin-top: 60px;
-  margin-bottom: 0px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#imageBa {
-  transform: translateY(10px);
-  max-width: 100%;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0px;
-}
-
-.offersClass {
-  grid-area: offers;
-  padding: 0px;
-  margin: 0px;
-  z-index: 2;
-}
-
-#offers {
-  background-color: rgb(52, 123, 255);
-  margin: 0;
-  padding: 10px 0px 5px 0px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .booking {
   position: fixed;
   bottom: 0px;
   width: 100%;
+
+  right: 0;
+
+  left: 0;
   font-family: "Trebuchet MS", sans-serif;
   padding: 25px;
   background-color: rgb(52, 123, 255);
@@ -194,71 +167,156 @@ nav li:hover {
   border: 2px solid black;
 }
 
-#offer {
-  grid-area: offer;
+#about {
+  grid-area: about;
+  padding-top: 15px;
 }
 
-#offer ul {
-  padding: 0;
+.aboutTittles {
+  font-size: 43px;
+  color: rgb(255, 15, 135);
+  background-image: linear-gradient(
+    silver,
+    white,
+    white,
+    white,
+    white,
+    white,
+    silver
+  );
 }
 
-#offer img {
-  max-width: 100%;
+h2 {
+  text-align: center;
+  margin: 0;
+  padding: 0px 20px 0px 20px;
+  border: 2px solid black;
+  border-bottom: 0px;
 }
 
-#offer {
-  display: grid;
-  grid-template-columns: repeat(
-    4,
-    minmax(0, 1fr)
-  ); /* sets how many rows and their size */
-  max-width: 1200px;
-  margin-left: auto; /* centers all the grid with its contents */
-  margin-right: auto; /* centers all the grid with its contents */
+p {
+  margin: 0;
+  padding: 40px;
+  font-size: 19px;
+  text-align: justify;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  min-height: 538.33px;
 }
 
-.yoyo {
-  background-color: rgb(238, 238, 238);
-  transition: 0.5s;
-  font-size: 25px;
-  border: 1px solid grey;
-  border-width: 0px 0px 0px 1px;
+#hotel {
+  grid-area: hotel;
+  margin-top: 40px;
+  max-width: 589px;
+  aspect-ratio: 1;
 }
 
-.yoyo p {
-  padding: 10px;
+#customer {
+  grid-area: customer;
+  margin-top: 40px;
+  max-width: 589px;
+  aspect-ratio: 1;
 }
 
-#yoyo4 {
-  border-width: 0px 1px 0px 1px;
+#hotelImage {
+  grid-area: img1;
+  margin-top: 40px;
 }
 
-.yoyo:hover {
-  transform: scale(1.025);
-  z-index: 0;
-  border-width: 0px 1px 0px 1px;
+.imageAnimation1 {
+  animation: expand1 3s ease-in-out forwards;
+  width: 589px;
+  aspect-ratio: 1;
 }
 
-#oferta1 {
-  max-width: 300px;
+#customerImage {
+  grid-area: img2;
+  margin-top: 40px;
 }
 
-#oferta1 p {
-  max-width: 100%;
+.imageAnimation2 {
+  animation: expand2 3s ease-in-out forwards;
+  width: 589px;
+  aspect-ratio: 1;
 }
 
-#main {
-  display: grid; /* sets map page body as a grid layout */
-  grid-template-columns: auto; /* sets how many rows and their size */
-  grid-template-areas: "banner" "offers" "offer" "footer"; /* sets grid desired configuration */
-  margin-left: auto; /* centers all the grid with its contents */
-  margin-right: auto; /* centers all the grid with its contents */
-  min-width: 352px; /* sets grid minimum width */
-  max-width: 100%; /* sets grid maximum width */
+@keyframes expand1 {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes expand2 {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.main {
+  margin-top: 50px;
+  display: grid; /* sets Map Page Body element as Main Grid area */
+  grid-template-columns: auto auto; /* sets how many colums in the Main Grid area and their size */
+  grid-template-areas: "img1 hotel" "customer img2"; /* sets Main Grid desired column/row configuration */
+  margin-left: auto; /* centers Main Grid with its contents */
+  margin-right: auto; /* centers Main Grid with its contents */
+  min-width: 1177.5px; /* sets Main Grid minimum width */
+  max-width: 1177.5px; /* sets Main Grid maximum width */
+}
+
+@media screen and (max-width: 1195px) {
+  .grid-container-map {
+    display: grid; /* sets Map Page Body element as Main Grid area */
+    grid-template-columns: auto auto; /* sets how many colums in the Main Grid area and their size */
+    grid-template-areas: "header nav" "hotel hotel" "img1 img1" "customer customer" "img2 img2" "footer footer"; /* sets Main Grid desired column/row configuration */
+    margin-left: auto; /* centers Main Grid with its contents */
+    margin-right: auto; /* centers Main Grid with its contents */
+    min-width: 590px; /* sets Main Grid minimum width */
+    max-width: 590px; /* sets Main Grid maximum width */
+  }
+
+  #logo {
+    margin: 9.5px 0px 0px 4px; /* changes LOGO Image spacing from the edges */
+  }
+
+  nav ul {
+    margin: 17px 12% 0px 0px; /* changes Nav Bar spacing from the edges */
+  }
+
+  nav li {
+    display: block; /* changes Nav Bar back into column style */
+  }
+
+  #nav4 {
+    float: right; /* moves Change language Select button to the right */
+  }
+  @keyframes expand1 {
+    0% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes expand2 {
+    0% {
+      transform: translateX(0px);
+    }
+  }
+  #hotelImage {
+    margin-top: 0px;
+  }
+
+  #customerImage {
+    margin-top: 0px;
+  }
 }
 
 #control {
-  max-width: 1200px;
+  max-width: 1177.5px;
   margin-left: auto; /* centers all the grid with its contents */
   margin-right: auto; /* centers all the grid with its contents */
 }
