@@ -9,7 +9,7 @@ html {
   box-sizing: inherit;
 }
 
-body {
+#home {
   min-width: 818px;
   background-color: rgb(245, 245, 245); /* sets background color */
   position: relative;

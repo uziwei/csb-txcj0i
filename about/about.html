@@ -9,102 +9,53 @@
     <link href="/about/style2.css" rel="stylesheet" />
     <title>ACROPOLIS - HOME</title>
   </head>
-    <body>
-      <div class="main">
-          <nav>
-              <div id="control">
-                <a href="/home/home.html"
-                ><img
-                  id="logo"
-                  alt="Logo"
-                  src="https://i.ibb.co/7Jd1Czg/logofinal.png""
-                  title="ACROPOLIS Home"
-                  /></a>
-              <!-- start of Nav Bar -->
-              <ul>
-                <!-- creates hyperlinked HOME button -->
-                <li><a id="nav1" href="/home/home.html">HOME</a></li>
-                <!-- creates hyperlinked MAP button -->
-                <li><a id="nav2" href="/map/map.html">MAP</a></li>
-                <!-- creates hyperlinked ABOUT button -->
-                <li><a id="nav3" href="/about/about.html">ABOUT</a></li>
-                <!-- start of Change Language select element section -->
-                <li id="nav4">
-                  <!-- start of Change Language select element -->
-                  <select title="Change Language" name="languages">
-                    <!-- creates English language select option -->
-                    <option value="EN">EN</option>
-                    <!-- creates Spanish language select option -->
-                    <option value="ES">ES</option>
-                    <!-- end of select element -->
-                  </select>
-                  <!-- end of select element section -->
-                </li>
-                <!-- end of Nav Bar -->
-              </ul>
-              <!-- end of Nav Bar section -->
-            </div>
-            </nav>
-
-
-          
-            <div class="booking" id="booking">
-
-              <!--Booking Division START-->
-              <label for="fromDate">FROM</label>
-              <!--Creates date selector-->
-              <input type="date" id="guestsBooking" />
-              <label for="toDate">TO</label>
-              <input type="date" id="guestsBooking" />
-        
-              <label for="guestsAdults">ADULTS</label>
-              <!--Creates dropdown select menu for adult guests-->
-              <select id="guestsBooking" alt="Select number of adult guests">
-                <option value=""> -- </option>
-                <option value="1"> 1 </option>
-                <option value="2"> 2 </option>
-                <option value="3"> 3 </option>
-                <option value="4"> 4 </option>
-                <option value="5"> 5 </option>
-                <option value="6"> 6 </option>
-                <option value="7"> 7 </option>
-                <option value="8"> 8 </option>
-                <option value="9"> 9 </option>
+    <body id="about">
+      <div id="aboutContent">
+        <nav>
+          <div id="control">
+            <img
+              id="logo"
+              alt="Logo"
+              src="https://i.ibb.co/7Jd1Czg/logofinal.png""
+              title="ACROPOLIS Hours"
+              />
+          <!-- start of Nav Bar -->
+          <ul>
+            <!-- creates hyperlinked HOME button -->
+            <li><a href="/home/home.html">HOME</a></li>
+            <!-- creates hyperlinked MAP button -->
+            <li><a href="/map/map.html">MAP</a></li>
+            <!-- creates hyperlinked ABOUT button -->
+            <li  id="nav3"<a href="/about/about.html">ABOUT</a></li>
+            <!-- start of Change Language select element section -->
+            <li id="nav4">
+              <!-- start of Change Language select element -->
+              <select title="Change Language" name="languages">
+                <!-- creates English language select option -->
+                <option value="EN">EN</option>
+                <!-- creates Spanish language select option -->
+                <option value="ES">ES</option>
+                <!-- end of select element -->
               </select>
-        
-              <label for="guestsKids" alt="Select number of child guests">KIDS</label>
-              <!--Creates dropdown select menu for young guests-->
-              <select id="guestsBooking">
-                <option value=""> -- </option>
-                <option value="1"> 1 </option>
-                <option value="2"> 2 </option>
-                <option value="3"> 3 </option>
-                <option value="4"> 4 </option>
-                <option value="5"> 5 </option>
-                <option value="6"> 6 </option>
-                <option value="7"> 7 </option>
-                <option value="8"> 8 </option>
-                <option value="9"> 9 </option>
-              </select>
-        
-              <!--Creates dropdown select menu for number of rooms-->
-             
-              <!--Developer note: The inputs do not send anything to anywhere yet-->
-              <!--Booking User Input END-->
-        
-              <a href="" class="bookButton">BOOK NOW</a>
-              <!--Developer note: Clicking BOOK NOW takes the visitor to ABOUT-->
-            </div>
+              <!-- end of select element section -->
+            </li>
+            <!-- end of Nav Bar -->
+          </ul>
+          <!-- end of Nav Bar section -->
+        </div>
+        </nav>
 
 
-          <div id="hotelImage" class="caca">
+
+ 
+          <div id="hotelImage">
             <img
               class="imageAnimation1"
               src="https://i.ibb.co/sKdFsWJ/hotel.jpg"
               alt="Hotel_landscape"
             />
           </div>
-          <div id="hotel" class="caca">
+          <div id="hotel">
             <h2 class="aboutTittles">HOTEL</h2>
             <p>
               After a fun filled day at Acropolis you may need some time to
@@ -128,7 +79,7 @@
               you may need.
             </p>
           </div>
-          <div id="customer" class="caca">
+          <div id="customer">
             <h2 class="aboutTittles">CUSTOMER SERVICE</h2>
             <p>
               At Acropolis we offer a 5-star customer service. Our team is
@@ -149,7 +100,7 @@
               </br></br>
               Come on down and speak to any of our helpful team today.</p>
           </div>
-          <div id="customerImage" class="caca">
+          <div id="customerImage">
             <img
               class="imageAnimation2"
               src="/resources/about/customerService.jpg"
@@ -159,25 +110,72 @@
 
    
         </div>
-      </div>
+        <div id="booking">
+
+          <!--Booking Division START-->
+          <label for="fromDate">FROM</label>
+          <!--Creates date selector-->
+          <input type="date" class="bookingOptions" />
+          <label for="toDate">TO</label>
+          <input type="date" class="bookingOptions" />
+      
+          <label for="guestsAdults">ADULTS</label>
+          <!--Creates dropdown select menu for adult guests-->
+          <select class="bookingOptions" alt="Select number of adult guests">
+            <option value="0"> 0 </option>
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+            <option value="4"> 4 </option>
+            <option value="5"> 5 </option>
+            <option value="6"> 6 </option>
+            <option value="7"> 7 </option>
+            <option value="8"> 8 </option>
+            <option value="9"> 9 </option>
+          </select>
+      
+          <label for="guestsKids" alt="Select number of child guests">KIDS</label>
+          <!--Creates dropdown select menu for young guests-->
+          <select class="bookingOptions">
+            <option value="0"> 0 </option>
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+            <option value="4"> 4 </option>
+            <option value="5"> 5 </option>
+            <option value="6"> 6 </option>
+            <option value="7"> 7 </option>
+            <option value="8"> 8 </option>
+            <option value="9"> 9 </option>
+          </select>
+      
+          <!--Creates dropdown select menu for number of rooms-->
+         
+          <!--Developer note: The inputs do not send anything to anywhere yet-->
+          <!--Booking User Input END-->
+      
+          <a href="" id="bookingButton">BOOK NOW</a>
+          <!--Developer note: Clicking BOOK NOW takes the visitor to ABOUT-->
+        </div>
+      
 
     </body>
-
-  <footer>
-        <ul class="contact">
-            <b>CONTACT US</b>
-            <li id="email">
-              <a href="mailto:info@acropolis.gg">info@acropolis.gg</a>
-            </li>
-          </ul>
-          <ul class="info">
-            <div "infoBox">
-            <b>OTHER INFO</b>
-      
-            <li><a href="/">Terms and Conditions</a></li>
-            </div>
-          </ul>
-        </footer>
+ 
+    <footer>
+      <ul id="contact">
+          <b>CONTACT US</b>
+          <li>
+            <a href="mailto:info@acropolis.gg">info@acropolis.gg</a>
+          </li>
+        </ul>
+        <ul id="info">
+          <div "infoBox">
+          <b>OTHER INFO</b>
+    
+          <li><a href="/">Terms and Conditions</a></li>
+          </div>
+        </ul>
+      </footer>
 
 
 </html>

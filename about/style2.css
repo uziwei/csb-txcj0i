@@ -9,7 +9,7 @@ html {
   box-sizing: inherit;
 }
 
-body {
+#about {
   background-color: rgb(245, 245, 245); /* sets background color */
   position: relative;
   margin: 0;
@@ -17,10 +17,6 @@ body {
   min-height: 100%;
   text-align: center;
   font-family: "Trebuchet MS", Tahoma, sans-serif; /* sets main font and fallback ones */
-}
-
-h1 {
-  color: white;
 }
 
 li {
@@ -32,11 +28,20 @@ a {
   color: black; /* sets default hyperlink color */
 }
 
-header {
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0px;
   background-color: rgb(255, 228, 73);
-  grid-area: header;
+  z-index: 1;
+}
 
-  /* sets header html element as grid header area */
+#control {
+  min-width: 818px;
+  max-width: 1100px;
+  margin-left: auto; /* centers all the grid with its contents */
+  margin-right: auto; /* centers all the grid with its contents */
 }
 
 #logo {
@@ -44,32 +49,16 @@ header {
   margin: 5px 0px 5px 10px; /* creates space above logo */
   height: 80px; /* sets logo width */
   transition: 1s; /* sets how long animation takes to complete */
+  animation: logo 1s ease forwards;
 }
 
-#logo:hover {
-  transform: translateX(
-    25px
-  ); /* moves logo to the right when mouse hovered over it */
-}
-
-@media screen and (max-width: 400px) {
-  #logo:hover {
-    transform: translateX(
-      0px
-    ); /* disables logo animation when screen size less than 400px*/
+@keyframes logo {
+  0% {
+    transform: translateX(100px);
   }
-}
-
-nav {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-
-  right: 0;
-
-  left: 0;
-  background-color: rgb(255, 228, 73);
-  z-index: 1;
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 nav ul {
@@ -96,8 +85,18 @@ nav li:hover {
   border-bottom: 4px solid black; /* changes nav bar button color filling when mouse hovered over it */
 }
 
+#nav1,
+#nav2,
+#nav3 {
+  border-bottom: 4px solid black;
+}
+
 #nav4 {
   margin-right: 0px;
+}
+
+#nav4:hover {
+  border-bottom: 0px; /* changes nav bar button color filling when mouse hovered over it */
 }
 
 #nav4 select {
@@ -109,66 +108,6 @@ nav li:hover {
   font-size: 29px; /* sets select font size */
   color: rgb(236, 43, 0); /* sets select font color */
   background-color: transparent; /* makes select background transparent */
-}
-#nav4:hover {
-  border-bottom: 0px; /* changes nav bar button color filling when mouse hovered over it */
-}
-
-@media screen and (max-width: 640px) {
-  /* runs when screen width is less than 941px */
-  #logo {
-    margin: 9.5px 0px 0px 4px; /* changes logo spacing from the edges */
-  }
-
-  nav ul {
-    margin: 17px 12% 0px 0px; /*changes nav bar spacing from the edges */
-  }
-
-  nav li {
-    display: block; /* changes nav bar back into column style */
-  }
-
-  #nav4 {
-    float: right; /* moves change language button to the right */
-    max-width: 50px; /* sets maximum width of lingo button CHECK*/
-  }
-}
-
-.booking {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-
-  right: 0;
-
-  left: 0;
-  font-family: "Trebuchet MS", sans-serif;
-  padding: 25px;
-  background-color: rgb(52, 123, 255);
-  z-index: 2;
-  color: white;
-  font-size: 20px;
-}
-
-.bookButton {
-  margin-left: 10px;
-  padding: 14px;
-  border: 2px solid black;
-  font-size: 20px;
-  background-color: rgb(255, 255, 95);
-  color: rgb(236, 43, 0);
-}
-
-#guestsBooking {
-  max-width: 100%;
-  max-height: 100%;
-
-  font-size: 20px;
-  color: black;
-  background-color: white;
-  outline: 1px;
-  padding: 10px;
-  border: 2px solid black;
 }
 
 #about {
@@ -262,8 +201,8 @@ p {
   }
 }
 
-.main {
-  margin-top: 50px;
+#aboutContent {
+  margin-top: 35px;
   display: grid; /* sets Map Page Body element as Main Grid area */
   grid-template-columns: auto auto; /* sets how many colums in the Main Grid area and their size */
   grid-template-areas: "img1 hotel" "customer img2"; /* sets Main Grid desired column/row configuration */
@@ -299,6 +238,7 @@ p {
   #nav4 {
     float: right; /* moves Change language Select button to the right */
   }
+
   @keyframes expand1 {
     0% {
       transform: translateX(0px);
@@ -319,12 +259,6 @@ p {
   }
 }
 
-#control {
-  max-width: 1100px;
-  margin-left: auto; /* centers all the grid with its contents */
-  margin-right: auto; /* centers all the grid with its contents */
-}
-
 footer {
   position: absolute;
   right: 0;
@@ -343,12 +277,47 @@ footer a {
   color: rgb(236, 43, 0);
 }
 
-.contact {
+#contact {
   margin-left: auto;
   margin-right: 100px;
 }
 
-.info {
+#info {
   margin-right: auto;
   margin-left: 100px;
+  transform: translateX(-20px);
+}
+
+#booking {
+  min-width: 926px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  font-family: "Trebuchet MS", sans-serif;
+  padding: 25px;
+  background-color: rgb(52, 123, 255);
+  z-index: 2;
+  color: white;
+  font-size: 20px;
+}
+
+.bookingOptions {
+  max-width: 100%;
+  max-height: 100%;
+
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  outline: 1px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+#bookingButton {
+  margin-left: 10px;
+  padding: 14px;
+  border: 2px solid black;
+  font-size: 25px;
+  background-color: rgb(255, 255, 95);
+  color: rgb(236, 43, 0);
 }
