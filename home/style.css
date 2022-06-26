@@ -41,8 +41,8 @@ header {
 
 #logo {
   float: left;
-  margin: 12px 0px 5px 10px; /* creates space above logo */
-  width: 135px; /* sets logo width */
+  margin: 5px 0px 5px 10px; /* creates space above logo */
+  height: 80px; /* sets logo width */
   transition: 1s; /* sets how long animation takes to complete */
 }
 
@@ -70,7 +70,7 @@ nav {
 
 nav ul {
   float: right; /* moves nav bar to the right */
-  margin: 30px 10px 0px 0px; /* adds spacing to the nav from the page edege */
+  margin: 25px 10px 0px 0px; /* adds spacing to the nav from the page edege */
   transition: 1s;
   /*time it takes for nav bar animation to complete*/
 }
@@ -80,7 +80,7 @@ nav li {
   border: 0px; /* sets each nav button border thickness */
   font-size: 30px; /* sets nav bar font size */
   margin-right: 20px;
-  padding: 10px 0px 32px 0px;
+  padding: 10px 0px 27px 0px;
   background-color: rgb(black); /* sets nav bar button color filling */
 }
 
@@ -98,9 +98,12 @@ nav li:hover {
   outline: none; /* removes default outline border after using the select button */
   border: 0px; /*removes default button border */
   padding: 0px 5px 0px 5px; /* increases button size sideways */
-  font-size: 25px; /* sets select font size */
+  font-size: 29px; /* sets select font size */
   color: rgb(236, 43, 0); /* sets select font color */
   background-color: transparent; /* makes select background transparent */
+}
+#nav4:hover {
+  border-bottom: 0px; /* changes nav bar button color filling when mouse hovered over it */
 }
 
 @media screen and (max-width: 640px) {
