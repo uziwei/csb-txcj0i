@@ -216,6 +216,23 @@ nav li:hover {
   margin-right: auto; /* centers all the grid with its contents */
 }
 
+.yoyo {
+  background-color: rgb(238, 238, 238);
+  transition: 0.2s;
+  font-size: 25px;
+}
+
+.yoyo p {
+  padding: 10px;
+}
+
+.yoyo:hover {
+  border: 1.5px solid grey;
+  border-width: 0px 1.5px 0px 1.5px;
+  transform: scale(1.025);
+  z-index: 0;
+}
+
 #oferta1 {
   max-width: 300px;
 }
@@ -226,22 +243,12 @@ nav li:hover {
 
 #main {
   display: grid; /* sets map page body as a grid layout */
-  grid-template-columns: auto auto auto auto; /* sets how many rows and their size */
-  grid-template-areas: "banner banner banner banner" "offers offers offers offers" "offer offer offer offer" "footer footer footer footer"; /* sets grid desired configuration */
+  grid-template-columns: auto; /* sets how many rows and their size */
+  grid-template-areas: "banner" "offers" "offer" "footer"; /* sets grid desired configuration */
   margin-left: auto; /* centers all the grid with its contents */
   margin-right: auto; /* centers all the grid with its contents */
   min-width: 352px; /* sets grid minimum width */
   max-width: 100%; /* sets grid maximum width */
-}
-
-.contact {
-  margin-left: auto;
-  margin-right: 100px;
-}
-
-.info {
-  margin-right: auto;
-  margin-left: 100px;
 }
 
 #control {
@@ -276,21 +283,4 @@ footer a {
 .info {
   margin-right: auto;
   margin-left: 100px;
-}
-
-.yoyo {
-  background-color: rgb(238, 238, 238);
-  transition: 0.2s;
-  font-size: 25px;
-}
-
-.yoyo p {
-  padding: 10px;
-}
-
-.yoyo:hover {
-  border: 1.5px solid grey;
-  border-width: 0px 1.5px 0px 1.5px;
-  transform: scale(1.025);
-  z-index: 0;
 }
