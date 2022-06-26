@@ -213,30 +213,14 @@ p {
 }
 
 @media screen and (max-width: 1195px) {
-  .grid-container-map {
+  #aboutContent {
     display: grid; /* sets Map Page Body element as Main Grid area */
-    grid-template-columns: auto auto; /* sets how many colums in the Main Grid area and their size */
-    grid-template-areas: "header nav" "hotel hotel" "img1 img1" "customer customer" "img2 img2" "footer footer"; /* sets Main Grid desired column/row configuration */
+    grid-template-columns: auto; /* sets how many colums in the Main Grid area and their size */
+    grid-template-areas: "hotel" "img1" "customer" "img2"; /* sets Main Grid desired column/row configuration */
     margin-left: auto; /* centers Main Grid with its contents */
     margin-right: auto; /* centers Main Grid with its contents */
     min-width: 590px; /* sets Main Grid minimum width */
     max-width: 590px; /* sets Main Grid maximum width */
-  }
-
-  #logo {
-    margin: 9.5px 0px 0px 4px; /* changes LOGO Image spacing from the edges */
-  }
-
-  nav ul {
-    margin: 17px 12% 0px 0px; /* changes Nav Bar spacing from the edges */
-  }
-
-  nav li {
-    display: block; /* changes Nav Bar back into column style */
-  }
-
-  #nav4 {
-    float: right; /* moves Change language Select button to the right */
   }
 
   @keyframes expand1 {
