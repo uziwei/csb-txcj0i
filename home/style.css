@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  min-width: 818px;
   background-color: rgb(245, 245, 245); /* sets background color */
   position: relative;
   margin: 0;
@@ -37,7 +38,7 @@ nav {
 }
 
 #control {
-  min-width: 815px;
+  min-width: 818px;
   max-width: 1100px;
   margin-left: auto; /* centers all the grid with its contents */
   margin-right: auto; /* centers all the grid with its contents */
