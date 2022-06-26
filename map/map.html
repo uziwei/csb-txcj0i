@@ -1,62 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Credits: Viljamaz-->
-  <!-- start of Head section which contains all the invisible information about the page -->
+  <!-- Credits: John AGCAOILI-->
   <head>
-    <!-- sets character encoding -->
     <meta charset="UTF-8" />
-    <!-- sets viewport width to be equal to screen width -->
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <!-- adds support to legacy browsers -->
-    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-    <!-- blocks bots from indexing page in search engines -->
-    <meta content="noindex,nofollow" name="robot" />
-    <!-- links external stylesheet -->
-    <link href="style1.css" rel="stylesheet" type="text/css" />
-    <!-- sets page tittle -->
-    <title>ACROPOLIS - MAP</title>
-    <!-- end of Head section -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="/map/style1.css" rel="stylesheet" />
+    <title>ACROPOLIS - HOME</title>
   </head>
-  <!-- start of Body section which contains all the visible information and sets it as Main Grid area -->
-  <body class="grid-container-map">
-    <!-- start of Header content -->
-    <header>
-      <!-- inserts hyperlinked Logo -->
-      <a href="/home/home.html"
-        ><img
-          id="logo"
-          alt="LOGO"
-          src="https://i.ibb.co/BLjYt7H/logo33.png"
-          title="ACROPOLIS Home"
-      /></a>
-      <!-- end of Header content -->
-    </header>
-    <!-- start of Nav Bar section -->
-    <nav>
-      <!-- start of Nav Bar -->
-      <ul>
-        <!-- creates hyperlinked HOME button -->
-        <li><a id="nav1" href="/home/home.html">HOME</a></li>
-        <!-- creates hyperlinked MAP button -->
-        <li><a id="nav2" href="/map/map.html">MAP</a></li>
-        <!-- creates hyperlinked ABOUT button -->
-        <li><a id="nav3" href="/about/about.html">ABOUT</a></li>
-        <!-- start of Change Language Select element section -->
-        <li id="nav4">
-          <!-- start of Change Language Select element -->
-          <select title="Change Language" name="languages">
-            <!-- creates English language select option -->
-            <option value="EN">EN</option>
-            <!-- creates Spanish language select option -->
-            <option value="ES">ES</option>
-            <!-- end of Select element -->
-          </select>
-          <!-- end of Select element section -->
-        </li>
-        <!-- end of Nav Bar -->
-      </ul>
-      <!-- end of Nav Bar section -->
-    </nav>
+    <body id="mapBody">
+      <div class="main">
+          <nav>
+              <div id="control">
+                <a href="/home/home.html"
+                ><img
+                  id="logo"
+                  alt="Logo"
+                  src="https://i.ibb.co/7Jd1Czg/logofinal.png""
+                  title="ACROPOLIS Home"
+                  /></a>
+              <!-- start of Nav Bar -->
+              <ul>
+                <!-- creates hyperlinked HOME button -->
+                <li><a id="nav1" href="/home/home.html">HOME</a></li>
+                <!-- creates hyperlinked MAP button -->
+                <li><a id="nav2" href="/map/map.html">MAP</a></li>
+                <!-- creates hyperlinked ABOUT button -->
+                <li><a id="nav3" href="/about/about.html">ABOUT</a></li>
+                <!-- start of Change Language select element section -->
+                <li id="nav4">
+                  <!-- start of Change Language select element -->
+                  <select title="Change Language" name="languages">
+                    <!-- creates English language select option -->
+                    <option value="EN">EN</option>
+                    <!-- creates Spanish language select option -->
+                    <option value="ES">ES</option>
+                    <!-- end of select element -->
+                  </select>
+                  <!-- end of select element section -->
+                </li>
+                <!-- end of Nav Bar -->
+              </ul>
+              <!-- end of Nav Bar section -->
+            </div>
+            </nav>
+
+
+          
+            <div class="booking" id="booking">
+
+              <!--Booking Division START-->
+              <label for="fromDate">FROM</label>
+              <!--Creates date selector-->
+              <input type="date" id="guestsBooking" />
+              <label for="toDate">TO</label>
+              <input type="date" id="guestsBooking" />
+        
+              <label for="guestsAdults">ADULTS</label>
+              <!--Creates dropdown select menu for adult guests-->
+              <select id="guestsBooking" alt="Select number of adult guests">
+                <option value=""> -- </option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+                <option value="6"> 6 </option>
+                <option value="7"> 7 </option>
+                <option value="8"> 8 </option>
+                <option value="9"> 9 </option>
+              </select>
+        
+              <label for="guestsKids" alt="Select number of child guests">KIDS</label>
+              <!--Creates dropdown select menu for young guests-->
+              <select id="guestsBooking">
+                <option value=""> -- </option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+                <option value="6"> 6 </option>
+                <option value="7"> 7 </option>
+                <option value="8"> 8 </option>
+                <option value="9"> 9 </option>
+              </select>
+        
+              <!--Creates dropdown select menu for number of rooms-->
+             
+              <!--Developer note: The inputs do not send anything to anywhere yet-->
+              <!--Booking User Input END-->
+        
+              <a href="" class="bookButton">BOOK NOW</a>
+              <!--Developer note: Clicking BOOK NOW takes the visitor to ABOUT-->
+            </div>
     <!-- start of Map section -->
     <div id="map">
       <!-- inserts MAP image -->
@@ -158,40 +196,26 @@
       ></div>
       <!-- end of Points of Interest section -->
     </div>
-    <!-- start of Footer section and sets it to Footer Subgrid area -->
-    <footer class="grid-container-footer">
-      <!-- start of Email section -->
-      <div id="email">
-        <ul>
-          <!-- creates Email section tittle -->
-          <li><b>CONTACT US</b></li>
-          <li>
-            <!-- creates Email hyperlink -->
-            <a href="mailto:info@acropolis.gg">info@acropolis.gg</a>
-          </li>
-        </ul>
-        <!-- end of Email section -->
+  </div>
+
+
+</body>
+
+<footer>
+  <ul class="contact">
+      <b>CONTACT US</b>
+      <li id="email">
+        <a href="mailto:info@acropolis.gg">info@acropolis.gg</a>
+      </li>
+    </ul>
+    <ul class="info">
+      <div "infoBox">
+      <b>OTHER INFO</b>
+
+      <li><a href="/">Terms and Conditions</a></li>
       </div>
-      <!-- start of Extra Info section -->
-      <div id="extra">
-        <ul>
-          <li>
-            <!-- creates Extra Info section tittle -->
-            <b>OTHER INFO</b>
-          </li>
-          <li>
-            <!-- creates Newsletter hyperlink -->
-            <a href="/about/about.html">Newsletter</a>
-          </li>
-          <li>
-            <!-- creates T&Cs hyperlink -->
-            <a href="/about/about.html">T&Cs</a>
-          </li>
-        </ul>
-        <!-- end of Extra Info section -->
-      </div>
-      <!-- end of Footer section -->
-    </footer>
-    <!-- end of visible content area -->
-  </body>
+    </ul>
+  </footer>
+
+
 </html>

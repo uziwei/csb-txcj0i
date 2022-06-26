@@ -1,111 +1,180 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  background-image: linear-gradient(
-    rgb(0, 195, 255),
-    rgb(235, 235, 235),
-    white
-  ); /* sets page background color */
-  text-align: center; /* centers all the content */
+  background-color: rgb(245, 245, 245); /* sets background color */
+  position: relative;
+  margin: 0;
+  padding-bottom: 182.5px;
+  min-height: 100%;
+  text-align: center;
   font-family: "Trebuchet MS", Tahoma, sans-serif; /* sets main font and fallback ones */
 }
 
+#mapBody {
+  padding-bottom: 241px;
+  background-image: linear-gradient(
+    rgb(0, 195, 255),
+    rgb(235, 235, 235),
+    rgb(245, 245, 245)
+  );
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: white;
+}
+
 li {
-  list-style-type: none; /* removes all List elements default styling */
+  list-style-type: none; /* removes list default styling */
 }
 
 a {
-  text-decoration: none; /* removes Hyperlink default underline */
-  color: rgb(236, 43, 0); /* sets default Hyperlink color */
+  text-decoration: none; /* removes hyperlink default underline */
+  color: black; /* sets default hyperlink color */
 }
 
 header {
-  grid-area: header; /* sets Header element as Header Grid section area */
+  background-color: rgb(255, 228, 73);
+  grid-area: header;
+
+  /* sets header html element as grid header area */
 }
 
 #logo {
-  margin-top: 40px; /* creates space above LOGO Image */
-  width: 200px; /* sets LOGO Image width */
-  transition: 1s; /* sets how long LOGO Image animation takes to complete */
+  float: left;
+  margin: 5px 0px 5px 10px; /* creates space above logo */
+  height: 80px; /* sets logo width */
+  transition: 1s; /* sets how long animation takes to complete */
 }
 
 #logo:hover {
   transform: translateX(
     25px
-  ); /* moves LOGO Image to the right when hovered over it */
+  ); /* moves logo to the right when mouse hovered over it */
 }
 
 @media screen and (max-width: 400px) {
   #logo:hover {
     transform: translateX(
       0px
-    ); /* disables LOGO Image animation when screen size less than 401px */
+    ); /* disables logo animation when screen size less than 400px*/
   }
 }
 
 nav {
-  grid-area: nav; /* sets Nav element as Nav Grid section area */
+  position: fixed;
+  top: 0px;
+  width: 100%;
+
+  right: 0;
+
+  left: 0;
+  background-color: rgb(255, 228, 73);
+  z-index: 1;
 }
 
 nav ul {
-  float: right; /* moves Nav Bar to the right */
-  margin: 93px 75px 0px 0px; /* adds spacing to the Nav Bar from the page edege */
-  transition: 1s; /* time it takes for Nav Bar animation to complete */
+  float: right; /* moves nav bar to the right */
+  margin: 25px 10px 0px 0px; /* adds spacing to the nav from the page edege */
+  transition: 1s;
+  /*time it takes for nav bar animation to complete*/
 }
 
 nav li {
-  display: inline; /* makes Nav Bar elements to be shown as a row instead of column */
-  border: 2.5px solid black; /* sets each Nav button border thickness */
-  font-size: 25px; /* sets Nav Bar font size */
-  background-color: rgb(255, 255, 95); /* sets Nav Bar button color filling */
+  display: inline; /* makes list to be shown as a row instead of column */
+  border: 0px; /* sets each nav button border thickness */
+  font-size: 30px; /* sets nav bar font size */
+  margin-right: 20px;
+  padding: 10px 0px 27px 0px;
+  background-color: rgb(black); /* sets nav bar button color filling */
+}
+
+nav li a {
+  padding: 10px 10px 32px 10px;
 }
 
 nav li:hover {
-  background-color: rgb(
-    221,
-    247,
-    255
-  ); /* changes Nav Bar buttons' color filling when mouse hovered over it */
-}
-
-#nav1 {
-  padding: 0px 25px 2px 25px; /* sets HOME button size */
-}
-
-#nav2 {
-  padding: 0px 34px 2px 34px; /* sets MAP button size */
-}
-
-#nav3 {
-  padding: 0px 19px 2px 19px; /* sets ABOUT button size */
+  border-bottom: 4px solid black; /* changes nav bar button color filling when mouse hovered over it */
 }
 
 #nav4 select {
-  /* changes Change Language Select button styling */
-  appearance: none; /* removes default Select arrow */
-  outline: none; /* removes default outline border after using the Select button */
+  /* change language button styling */
+  appearance: none; /* Removes default select arrow */
+  outline: none; /* removes default outline border after using the select button */
   border: 0px; /*removes default button border */
   padding: 0px 5px 0px 5px; /* increases button size sideways */
-  font-size: 25px; /* sets Select font size */
-  color: rgb(236, 43, 0); /* sets Select font color */
-  background-color: transparent; /* makes Select background transparent */
+  font-size: 29px; /* sets select font size */
+  color: rgb(236, 43, 0); /* sets select font color */
+  background-color: transparent; /* makes select background transparent */
+}
+#nav4:hover {
+  border-bottom: 0px; /* changes nav bar button color filling when mouse hovered over it */
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 640px) {
   /* runs when screen width is less than 941px */
   #logo {
-    margin: 9.5px 0px 0px 4px; /* changes LOGO Image spacing from the edges */
+    margin: 9.5px 0px 0px 4px; /* changes logo spacing from the edges */
   }
 
   nav ul {
-    margin: 17px 12% 0px 0px; /* changes Nav Bar spacing from the edges */
+    margin: 17px 12% 0px 0px; /*changes nav bar spacing from the edges */
   }
 
   nav li {
-    display: block; /* changes Nav Bar back into column style */
+    display: block; /* changes nav bar back into column style */
   }
 
   #nav4 {
-    float: right; /* moves Change language Select button to the right */
+    float: right; /* moves change language button to the right */
+    max-width: 50px; /* sets maximum width of lingo button CHECK*/
   }
+}
+
+.booking {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+
+  right: 0;
+
+  left: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  padding: 25px;
+  background-color: rgb(52, 123, 255);
+  z-index: 2;
+  color: white;
+  font-size: 20px;
+}
+
+.bookButton {
+  margin-left: 10px;
+  padding: 14px;
+  border: 2px solid black;
+  font-size: 20px;
+  background-color: rgb(255, 255, 95);
+  color: rgb(236, 43, 0);
+}
+
+#guestsBooking {
+  max-width: 100%;
+  max-height: 100%;
+
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  outline: 1px;
+  padding: 10px;
+  border: 2px solid black;
 }
 
 #map {
@@ -224,32 +293,47 @@ nav li:hover {
   ); /* sets color and opacity of expanded text box*/
 }
 
-footer {
-  grid-area: footer; /* sets Footer element as Footer Grid section area */
-  margin: 40px 0px 30px 0px; /* sets margin spacing over and under Footer area */
-}
-
-#email {
-  grid-area: email; /* sets Email element as Email Grid section area */
-}
-
-#extra {
-  grid-area: extra; /* sets Extra element as Extra Grid section area */
-  margin-right: 40px; /* moves Extra element content to the left */
-}
-
-.grid-container-map {
+.main {
+  margin-top: 80px;
   display: grid; /* sets Map Page Body element as Main Grid area */
-  grid-template-columns: auto auto auto; /* sets how many colums in the Main Grid area and their size */
-  grid-template-areas: "header nav nav" "map map map" "poi poi poi" "footer footer footer"; /* sets Main Grid desired column/row configuration */
+  grid-template-columns: auto; /* sets how many colums in the Main Grid area and their size */
+  grid-template-areas: "map" "poi"; /* sets Main Grid desired column/row configuration */
   margin-left: auto; /* centers Main Grid with its contents */
   margin-right: auto; /* centers Main Grid with its contents */
-  min-width: 352px; /* sets Main Grid minimum width */
-  max-width: 1145px; /* sets Main Grid maximum width */
+  min-width: 1177.5px; /* sets Main Grid minimum width */
+  max-width: 1177.5px; /* sets Main Grid maximum width */
 }
 
-.grid-container-footer {
-  display: grid; /* sets Footer element as Subgrid of Map Main Grid */
-  grid-template-columns: auto auto; /* sets how many colums in the Footer Grid area and their size */
-  grid-template-areas: "email extra"; /* sets Footer Grid desired column/row configuration */
+#control {
+  max-width: 1177.5px;
+  margin-left: auto; /* centers all the grid with its contents */
+  margin-right: auto; /* centers all the grid with its contents */
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 97px;
+  left: 0;
+  padding: 10px 0px 10px 0px; /* sets margin spacing over and under footer area */
+  background-color: rgb(255, 228, 73);
+  display: grid; /* sets footer element as subgrid of map grid */
+  grid-template-columns: auto auto; /* sets how many rows and their size */
+  margin-left: auto; /* centers all the grid with its contents */
+  margin-right: auto; /* centers all the grid with its contents */
+  z-index: 1;
+}
+
+footer a {
+  color: rgb(236, 43, 0);
+}
+
+.contact {
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+.info {
+  margin-right: auto;
+  margin-left: 100px;
 }
