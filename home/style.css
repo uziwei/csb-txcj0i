@@ -19,10 +19,6 @@ body {
   font-family: "Trebuchet MS", Tahoma, sans-serif; /* sets main font and fallback ones */
 }
 
-h1 {
-  color: white;
-}
-
 li {
   list-style-type: none; /* removes list default styling */
 }
@@ -32,11 +28,18 @@ a {
   color: black; /* sets default hyperlink color */
 }
 
-header {
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%; /* or use left and right */
   background-color: rgb(255, 228, 73);
-  grid-area: header;
+  z-index: 1;
+}
 
-  /* sets header html element as grid header area */
+#control {
+  max-width: 1100px;
+  margin-left: auto; /* centers all the grid with its contents */
+  margin-right: auto; /* centers all the grid with its contents */
 }
 
 #logo {
@@ -44,35 +47,16 @@ header {
   margin: 5px 0px 5px 10px; /* creates space above logo */
   height: 80px; /* sets logo width */
   transition: 1s; /* sets how long animation takes to complete */
+  animation: logo 1s ease forwards;
 }
 
-#logo {
-  animation: expand 1s ease forwards;
-}
-
-@keyframes expand {
+@keyframes logo {
   0% {
     transform: translateX(100px);
   }
   100% {
     transform: translateX(0px);
   }
-}
-
-@media screen and (max-width: 400px) {
-  #logo:hover {
-    transform: translateX(
-      0px
-    ); /* disables logo animation when screen size less than 400px*/
-  }
-}
-
-nav {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  background-color: rgb(255, 228, 73);
-  z-index: 1;
 }
 
 nav ul {
@@ -95,16 +79,22 @@ nav li a {
   padding: 10px 10px 32px 10px;
 }
 
-#nav1 {
-  border-bottom: 4px solid black;
-}
-
 nav li:hover {
   border-bottom: 4px solid black; /* changes nav bar button color filling when mouse hovered over it */
 }
 
+#nav1,
+#nav2,
+#nav3 {
+  border-bottom: 4px solid black;
+}
+
 #nav4 {
   margin-right: 0px;
+}
+
+#nav4:hover {
+  border-bottom: 0px; /* changes nav bar button color filling when mouse hovered over it */
 }
 
 #nav4 select {
@@ -117,31 +107,8 @@ nav li:hover {
   color: rgb(236, 43, 0); /* sets select font color */
   background-color: transparent; /* makes select background transparent */
 }
-#nav4:hover {
-  border-bottom: 0px; /* changes nav bar button color filling when mouse hovered over it */
-}
 
-@media screen and (max-width: 640px) {
-  /* runs when screen width is less than 941px */
-  #logo {
-    margin: 9.5px 0px 0px 4px; /* changes logo spacing from the edges */
-  }
-
-  nav ul {
-    margin: 17px 12% 0px 0px; /*changes nav bar spacing from the edges */
-  }
-
-  nav li {
-    display: block; /* changes nav bar back into column style */
-  }
-
-  #nav4 {
-    float: right; /* moves change language button to the right */
-    max-width: 50px; /* sets maximum width of lingo button CHECK*/
-  }
-}
-
-#imageBanner {
+#videoSection {
   grid-area: banner;
   padding: 0px;
 
@@ -152,7 +119,7 @@ nav li:hover {
   margin-right: auto;
 }
 
-#imageBa {
+#video {
   transform: translateY(10px);
   max-width: 100%;
   margin-top: 0px;
@@ -160,68 +127,22 @@ nav li:hover {
   padding: 0px;
 }
 
-.offersClass {
+#offerTittle {
   grid-area: offers;
   padding: 0px;
   margin: 0px;
   z-index: 2;
-}
-
-#offers {
   background-color: rgb(52, 123, 255);
   margin: 0;
   padding: 10px 0px 5px 0px;
   max-width: 1177.5px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.booking {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  font-family: "Trebuchet MS", sans-serif;
-  padding: 25px;
-  background-color: rgb(52, 123, 255);
-  z-index: 2;
   color: white;
-  font-size: 20px;
 }
 
-.bookButton {
-  margin-left: 10px;
-  padding: 14px;
-  border: 2px solid black;
-  font-size: 25px;
-  background-color: rgb(255, 255, 95);
-  color: rgb(236, 43, 0);
-}
-
-#guestsBooking {
-  max-width: 100%;
-  max-height: 100%;
-
-  font-size: 20px;
-  color: black;
-  background-color: white;
-  outline: 1px;
-  padding: 10px;
-  border: 2px solid black;
-}
-
-#offer {
+#offers {
   grid-area: offer;
-}
-
-#offer ul {
-  padding: 0;
-}
-
-#offer img {
-  max-width: 100%;
-}
-
-#offer {
   display: grid;
   grid-template-columns: repeat(
     4,
@@ -232,7 +153,15 @@ nav li:hover {
   margin-right: auto; /* centers all the grid with its contents */
 }
 
-.yoyo {
+#offers ul {
+  padding: 0;
+}
+
+#offers img {
+  max-width: 100%;
+}
+
+.offerSection {
   background-color: white;
   transition: 0.5s;
   font-size: 25px;
@@ -240,26 +169,18 @@ nav li:hover {
   border-width: 0px 0px 0px 1px;
 }
 
-.yoyo p {
+.offerSection p {
   padding: 10px;
 }
 
-#yoyo4 {
-  border-width: 0px 1px 0px 1px;
-}
-
-.yoyo:hover {
+.offerSection:hover {
   transform: scale(1.025);
   z-index: 0;
   border-width: 0px 1px 0px 1px;
 }
 
-#oferta1 {
-  max-width: 300px;
-}
-
-#oferta1 p {
-  max-width: 100%;
+#offerSection4 {
+  border-width: 0px 1px 0px 1px;
 }
 
 #main {
@@ -270,12 +191,6 @@ nav li:hover {
   margin-right: auto; /* centers all the grid with its contents */
   min-width: 352px; /* sets grid minimum width */
   max-width: 100%; /* sets grid maximum width */
-}
-
-#control {
-  max-width: 1100px;
-  margin-left: auto; /* centers all the grid with its contents */
-  margin-right: auto; /* centers all the grid with its contents */
 }
 
 footer {
@@ -305,4 +220,37 @@ footer a {
   margin-right: auto;
   margin-left: 100px;
   transform: translateX(-20px);
+}
+
+.booking {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  font-family: "Trebuchet MS", sans-serif;
+  padding: 25px;
+  background-color: rgb(52, 123, 255);
+  z-index: 2;
+  color: white;
+  font-size: 20px;
+}
+
+#guestsBooking {
+  max-width: 100%;
+  max-height: 100%;
+
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  outline: 1px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.bookButton {
+  margin-left: 10px;
+  padding: 14px;
+  border: 2px solid black;
+  font-size: 25px;
+  background-color: rgb(255, 255, 95);
+  color: rgb(236, 43, 0);
 }
