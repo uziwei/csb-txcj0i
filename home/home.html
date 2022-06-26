@@ -9,8 +9,8 @@
     <link href="/home/style.css" rel="stylesheet" />
     <title>ACROPOLIS - HOME</title>
   </head>
-    <body>
-      <div class="main">
+    <body id="home">
+    
           <nav>
               <div id="control">
                 <img
@@ -24,9 +24,9 @@
                 <!-- creates hyperlinked HOME button -->
                 <li id="nav1"><a href="/home/home.html">HOME</a></li>
                 <!-- creates hyperlinked MAP button -->
-                <li id="nav2"><a href="/map/map.html">MAP</a></li>
+                <li><a href="/map/map.html">MAP</a></li>
                 <!-- creates hyperlinked ABOUT button -->
-                <li id="nav3"><a href="/about/about.html">ABOUT</a></li>
+                <li><a href="/about/about.html">ABOUT</a></li>
                 <!-- start of Change Language select element section -->
                 <li id="nav4">
                   <!-- start of Change Language select element -->
@@ -49,22 +49,22 @@
             <div id="videoSection">
             <video id ="video"
             width= "1177.5px" playsinline autoplay muted loop>
-              <source src="https://storage.googleapis.com/vimeo-videotagging-prod-videoassets/W0NeZ2305QCtlmiDDSxUYoYLeTAmKWSG/3358769286.mp4?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=vimeo-tf-videotagsvc-prod%40vimeo-videotagging-prod.iam.gserviceaccount.com%2F20220626%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220626T120123Z&X-Goog-Expires=10801&X-Goog-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22acropolis.mp4.mp4%22&X-Goog-Signature=5371de97808a8652a059b13edd197e819cb4ef64a57da1dc3e897989ff2af78efd819318c0e5a7e65d27200d926adc5321db033202eb4e511ebc9c27a0c165f63b1696ceed546103b440a6d675e9ffac18eaca8b16f9dfc48ecb360edecdaca4b4b03e6465a6baa9057220e5540f8cbeabf40d21df81fd3d3dff0dfab54d0f735d8730d19275714e59f255ae8cf7dee6aef93e33613e4b6ada8668a8f7f9463de077730c7f7640bd588626e40866b4612d0263dca527b94b3e0f4ed79a5d1c4c4e5ed8a0cff590fecb0726e3912ff0fa86c8766e20c718d566ee1a27ac8a46d74a99b84b396840a24f9ed66da84c80861d4e9b81a9c9abd9e461ef104d2e7ff9" type="video/mp4">
+              <source src="https://storage.googleapis.com/vimeo-videotagging-prod-videoassets/W0NeZ2305QCtlmiDDSxUYoYLeTAmKWSG/3358769286.mp4?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=vimeo-tf-videotagsvc-prod%40vimeo-videotagging-prod.iam.gserviceaccount.com%2F20220626%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220626T151814Z&X-Goog-Expires=10800&X-Goog-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22acropolis.mp4.mp4%22&X-Goog-Signature=900b9225551b238c235a2bfa1621da3c391e35b76620b2c01359de1bbcec8a31b06a174b765b78da359fdf57ef5702beda558b8978f63507e4b37f466dbb93d9ce0d2af3b7b705a6541726a9c51b42cb422c3f94539c126211aa03b8f5283d1359ba165d4c0f0e9269b11a3b8a0b57d6d93ed5442dc3751aa269812bcc634eec9009969adafd91dc7c39400c6c5b8ea01a9cd348c4ce7ee8ede8c4e06ff7f3a1f75c36e3e1400421cee2c1d1ecf998bc8cbc00bc9fbf75bd9b2ef7d8bcce7119e9caaac7081ce341bb2859d49eecf615bc10f632db5f7666b877c5f2469dc64a37df03bb3bd4f4fc966f2653aab9b9b4ed20a2b9a665130b6244a125827332ef" type="video/mp4">
             </video>
           </div>
           
-            <div class="booking">
+            <div id="booking">
 
               <!--Booking Division START-->
               <label for="fromDate">FROM</label>
               <!--Creates date selector-->
-              <input type="date" id="guestsBooking" />
+              <input type="date" class="bookingOptions" />
               <label for="toDate">TO</label>
-              <input type="date" id="guestsBooking" />
+              <input type="date" class="bookingOptions" />
         
               <label for="guestsAdults">ADULTS</label>
               <!--Creates dropdown select menu for adult guests-->
-              <select id="guestsBooking" alt="Select number of adult guests">
+              <select class="bookingOptions" alt="Select number of adult guests">
                 <option value="0"> 0 </option>
                 <option value="1"> 1 </option>
                 <option value="2"> 2 </option>
@@ -79,7 +79,7 @@
         
               <label for="guestsKids" alt="Select number of child guests">KIDS</label>
               <!--Creates dropdown select menu for young guests-->
-              <select id="guestsBooking">
+              <select class="bookingOptions">
                 <option value="0"> 0 </option>
                 <option value="1"> 1 </option>
                 <option value="2"> 2 </option>
@@ -97,7 +97,7 @@
               <!--Developer note: The inputs do not send anything to anywhere yet-->
               <!--Booking User Input END-->
         
-              <a href="" class="bookButton">BOOK NOW</a>
+              <a href="" id="bookingButton">BOOK NOW</a>
               <!--Developer note: Clicking BOOK NOW takes the visitor to ABOUT-->
             </div>
             <!--Booking Division END-->
@@ -106,6 +106,7 @@
                 <h1>LIFELONG MEMORIES FROM JUST £28 A DAY!</h1>
               
             </div>
+
          <div id="offers">
         
               <div class="offerSection">
@@ -171,18 +172,18 @@
               </div>
 
             </div>
-          </div>
+
 
         </body>
   
       <footer>
-            <ul class="contact">
+            <ul id="contact">
                 <b>CONTACT US</b>
-                <li id="email">
+                <li>
                   <a href="mailto:info@acropolis.gg">info@acropolis.gg</a>
                 </li>
               </ul>
-              <ul class="info">
+              <ul id="info">
                 <div "infoBox">
                 <b>OTHER INFO</b>
           

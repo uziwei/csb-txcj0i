@@ -37,6 +37,7 @@ nav {
 }
 
 #control {
+  min-width: 815px;
   max-width: 1100px;
   margin-left: auto; /* centers all the grid with its contents */
   margin-right: auto; /* centers all the grid with its contents */
@@ -183,16 +184,6 @@ nav li:hover {
   border-width: 0px 1px 0px 1px;
 }
 
-#main {
-  display: grid; /* sets map page body as a grid layout */
-  grid-template-columns: auto; /* sets how many rows and their size */
-  grid-template-areas: "banner" "offers" "offer" "footer"; /* sets grid desired configuration */
-  margin-left: auto; /* centers all the grid with its contents */
-  margin-right: auto; /* centers all the grid with its contents */
-  min-width: 352px; /* sets grid minimum width */
-  max-width: 100%; /* sets grid maximum width */
-}
-
 footer {
   position: absolute;
   right: 0;
@@ -211,18 +202,19 @@ footer a {
   color: rgb(236, 43, 0);
 }
 
-.contact {
+#contact {
   margin-left: auto;
   margin-right: 100px;
 }
 
-.info {
+#info {
   margin-right: auto;
   margin-left: 100px;
   transform: translateX(-20px);
 }
 
-.booking {
+#booking {
+  min-width: 926px;
   position: fixed;
   bottom: 0px;
   width: 100%;
@@ -234,7 +226,7 @@ footer a {
   font-size: 20px;
 }
 
-#guestsBooking {
+.bookingOptions {
   max-width: 100%;
   max-height: 100%;
 
@@ -246,7 +238,7 @@ footer a {
   border: 2px solid black;
 }
 
-.bookButton {
+#bookingButton {
   margin-left: 10px;
   padding: 14px;
   border: 2px solid black;
