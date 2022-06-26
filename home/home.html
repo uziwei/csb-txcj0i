@@ -9,217 +9,188 @@
     <link href="/home/style.css" rel="stylesheet" />
     <title>ACROPOLIS - HOME</title>
   </head>
-  <div id="container">
-  <body>
-
-    <div class="grid-container-map">
-
-      
-    <nav>
-      <div id="control">
-        <a href="/home/home.html"
-        ><img
-          id="logo"
-          alt="Logo"
-          src="https://i.ibb.co/BLjYt7H/logo33.png"
-          title="ACROPOLIS Home"
-          /></a>
-      <!-- start of Nav Bar -->
-      <ul>
-        <!-- creates hyperlinked HOME button -->
-        <li><a id="nav1" href="/home/home.html">Home</a></li>
-        <!-- creates hyperlinked MAP button -->
-        <li><a id="nav2" href="/map/map.html">Map</a></li>
-        <!-- creates hyperlinked ABOUT button -->
-        <li><a id="nav3" href="/about/about.html">About</a></li>
-        <!-- start of Change Language select element section -->
-        <li id="nav4">
-          <!-- start of Change Language select element -->
-          <select title="Change Language" name="languages">
-            <!-- creates English language select option -->
-            <option value="EN">EN</option>
-            <!-- creates Spanish language select option -->
-            <option value="ES">ES</option>
-            <!-- end of select element -->
-          </select>
-          <!-- end of select element section -->
-        </li>
-        <!-- end of Nav Bar -->
-      </ul>
-      <!-- end of Nav Bar section -->
-    </div>
-    </nav>
-    <div id="imageBanner">
-    <img id ="imageBa"
-    width= "1200px";
-      src="https://upload.wikimedia.org/wikipedia/commons/3/37/%E5%90%88%E8%82%A5%E4%B8%87%E8%BE%BE%E4%B9%90%E5%9B%AD%E7%99%BD%E9%BE%99%E9%A3%9E%E5%A4%A9%E8%BF%87%E5%B1%B1%E8%BD%A6%E9%92%9D%E8%BD%A8%E8%BD%AC%E8%BE%99%E5%99%A8.gif"
-      alt="Roller Coaster Rail Change - Animated"
-    />
-  </div>
-    <div class="booking" id="booking">
-      <!--Booking Division START-->
-      <label for="fromDate">From</label>
-      <!--Creates date selector-->
-      <input type="date" id="guestsBooking" />
-      -
-      <label for="toDate">to</label>
-      <input type="date" id="guestsBooking" />
-
-      <label for="guestsAdults">Adults</label>
-      <!--Creates dropdown select menu for adult guests-->
-      <select id="guestsBooking" alt="Select number of adult guests">
-        <option value=""> -- </option>
-        <option value="1"> 1 </option>
-        <option value="2"> 2 </option>
-        <option value="3"> 3 </option>
-        <option value="4"> 4 </option>
-        <option value="5"> 5 </option>
-        <option value="6"> 6 </option>
-        <option value="7"> 7 </option>
-        <option value="8"> 8 </option>
-        <option value="9"> 9 </option>
-      </select>
-
-      <label for="guestsKids" alt="Select number of child guests">Kids</label>
-      <!--Creates dropdown select menu for young guests-->
-      <select id="guestsBooking">
-        <option value=""> -- </option>
-        <option value="1"> 1 </option>
-        <option value="2"> 2 </option>
-        <option value="3"> 3 </option>
-        <option value="4"> 4 </option>
-        <option value="5"> 5 </option>
-        <option value="6"> 6 </option>
-      </select>
-
-      <!--Creates dropdown select menu for number of rooms-->
-      <label for="guestsRooms">Rooms</label>
-      <select id="guestsBooking" alt="Select number of rooms">
-        <option value=""> -- </option>
-        <option value="1"> 1 </option>
-        <option value="2"> 2 </option>
-        <option value="3"> 3 </option>
-      </select>
-      <!--Developer note: The inputs do not send anything to anywhere yet-->
-      <!--Booking User Input END-->
-
-      <a href="/about/about.html" class="bookButton">BOOK NOW</a>
-      <!--Developer note: Clicking BOOK NOW takes the visitor to ABOUT-->
-    </div>
-    <!--Booking Division END-->
-    <div class="offersClass">
-      <div id="offers">
-        <h1>LIFELONG MEMORIES FROM JUST £28 A DAY</h1>
-      </div>
-    </div>
- <div id="offer">
-
-      <div id="yoyo1">
-
-        <div id="oferta1">
-          <img id="offer1Img"
-          src="https://i.ibb.co/BLjYt7H/logo33.png"
-          title="ACROPOLIS Home"
-          width="200px"
-          />
-
-          <p>
-            lorem lorem lorem lorem lorem lorem 
-            lorem lorem lorem lorem lorem lorem 
-            lorem lorem lorem lorem lorem lorem 
-            lorem lorem loremlorem lorem lorem lorem lorem lorem 
-            lorem lorem lorem lorem lorem lorem 
-            lorem lorem lorem lorem lorem lorem 
-            lorem lorem loremlorem lorem lorem lorem lorem lorem 
-            lorem lorem lorem lorem lorem lorem 
-            lorem lorem lorem lorem lorem lorem 
-            lorem lorem lorem</p>
-          </div>
-
-
-        </div>
-
-        <div id="yoyo2">
-
-            <div id="oferta1">
-              <img id="offer1Img"
-              src="https://i.ibb.co/BLjYt7H/logo33.png"
-              title="ACROPOLIS Home"
-              width="200px"
-              />
-    
-              <p>
-                lorem lorem lorem lorem lorem lorem 
-                lorem lorem lorem lorem lorem lorem 
-                lorem lorem lorem lorem lorem lorem 
-                lorem lorem lorem</p>
-              </div>
-    
-    
-            </div>
-
-
-            <div id="yoyo3">
-
-                <div id="oferta1">
-                  <img id="offer1Img"
+    <body>
+      <div class="main">
+          <nav>
+              <div id="control">
+                <a href="/home/home.html"
+                ><img
+                  id="logo"
+                  alt="Logo"
                   src="https://i.ibb.co/BLjYt7H/logo33.png"
                   title="ACROPOLIS Home"
-                  width="200px"
+                  /></a>
+              <!-- start of Nav Bar -->
+              <ul>
+                <!-- creates hyperlinked HOME button -->
+                <li><a id="nav1" href="/home/home.html">HOME</a></li>
+                <!-- creates hyperlinked MAP button -->
+                <li><a id="nav2" href="/map/map.html">MAP</a></li>
+                <!-- creates hyperlinked ABOUT button -->
+                <li><a id="nav3" href="/about/about.html">ABOUT</a></li>
+                <!-- start of Change Language select element section -->
+                <li id="nav4">
+                  <!-- start of Change Language select element -->
+                  <select title="Change Language" name="languages">
+                    <!-- creates English language select option -->
+                    <option value="EN">EN</option>
+                    <!-- creates Spanish language select option -->
+                    <option value="ES">ES</option>
+                    <!-- end of select element -->
+                  </select>
+                  <!-- end of select element section -->
+                </li>
+                <!-- end of Nav Bar -->
+              </ul>
+              <!-- end of Nav Bar section -->
+            </div>
+            </nav>
+            <div id="imageBanner">
+            <video id ="imageBa"
+            width= "1200px" playsinline autoplay muted loop>
+              <source src="https://storage.googleapis.com/vimeo-videotagging-prod-videoassets/W0NeZ2305QCtlmiDDSxUYoYLeTAmKWSG/3358769286.mp4?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=vimeo-tf-videotagsvc-prod%40vimeo-videotagging-prod.iam.gserviceaccount.com%2F20220626%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220626T003616Z&X-Goog-Expires=10800&X-Goog-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22acropolis.mp4.mp4%22&X-Goog-Signature=91d2d05bf6c62fed1c005dc716a28dbc1e8502a27ad61bdfa14847b705b9179cd1737b10a0eb7f2d2bb56a88ee881d312b8f9259c04f43b5f99bf8d95eb9d36e6b054918cb39b85f32b4602e0e8a5b8c2f10184d36fe0327b2f09c68440984d79721202445aa210098145b1b83fd7b88e236e6fb41325161375d902005de6c6ce557fa9b231ef9adc1f7b967740b4b9aeb7e52eae16c4943ecfc5f2a20c1e2834d1b8b33ec9adc18a59a881cb071c566a7ab1358c81bf39ad56fa6e3b320c9952a2f470fad800dafbd42db40eea308d807411625845b250d71211f75955f9a58c8fa28d6d1e80dce40ac408068647d0845cfe1f40ee0595b5f74af17e06f51c0" type="video/mp4">
+            </video>
+          </div>
+          
+            <div class="booking" id="booking">
+
+              <!--Booking Division START-->
+              <label for="fromDate">FROM</label>
+              <!--Creates date selector-->
+              <input type="date" id="guestsBooking" />
+              <label for="toDate">TO</label>
+              <input type="date" id="guestsBooking" />
+        
+              <label for="guestsAdults">ADULTS</label>
+              <!--Creates dropdown select menu for adult guests-->
+              <select id="guestsBooking" alt="Select number of adult guests">
+                <option value=""> -- </option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+                <option value="6"> 6 </option>
+                <option value="7"> 7 </option>
+                <option value="8"> 8 </option>
+                <option value="9"> 9 </option>
+              </select>
+        
+              <label for="guestsKids" alt="Select number of child guests">KIDS</label>
+              <!--Creates dropdown select menu for young guests-->
+              <select id="guestsBooking">
+                <option value=""> -- </option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+                <option value="6"> 6 </option>
+                <option value="7"> 7 </option>
+                <option value="8"> 8 </option>
+                <option value="9"> 9 </option>
+              </select>
+        
+              <!--Creates dropdown select menu for number of rooms-->
+             
+              <!--Developer note: The inputs do not send anything to anywhere yet-->
+              <!--Booking User Input END-->
+        
+              <a href="" class="bookButton">BOOK NOW</a>
+              <!--Developer note: Clicking BOOK NOW takes the visitor to ABOUT-->
+            </div>
+            <!--Booking Division END-->
+            <div class="offersClass">
+              <div id="offers">
+                <h1>LIFELONG MEMORIES FROM JUST £28 A DAY!</h1>
+              </div>
+            </div>
+         <div id="offer">
+        
+              <div class="yoyo">
+        
+                <div id="oferta1">
+                  <img id="offer1Img"
+                  src="https://i.ibb.co/qMbfm6N/carousel.jpg"
+               
+      
                   />
         
                   <p>
-                    lorem lorem lorem lorem lorem lorem 
-                    lorem lorem lorem lorem lorem lorem 
-                    lorem lorem lorem lorem lorem lorem 
-                    lorem lorem lorem</p>
+                    THIS WEEKEND FAMILY MEALS 50% OFF!</p>
                   </div>
         
         
                 </div>
-
-
-                <div id="yoyo4">
-
+        
+                <div class="yoyo">
+        
                     <div id="oferta1">
                       <img id="offer1Img"
-                      src="https://i.ibb.co/BLjYt7H/logo33.png"
-                      title="ACROPOLIS Home"
-                      width="200px"
+                      src="https://i.ibb.co/mcchB0k/logRide.jpg"
+         
+          
                       />
             
                       <p>
-                        lorem lorem lorem lorem lorem lorem 
-                        lorem lorem lorem lorem lorem lorem 
-                        lorem lorem lorem lorem lorem lorem 
-                        lorem lorem lorem</p>
+                          LOG RIDES ARE FINALLY OPEN!</p>
                       </div>
             
             
                     </div>
+        
+        
+                    <div class="yoyo">
+        
+                        <div id="oferta1">
+                          <img id="offer1Img"
+                          src="https://i.ibb.co/xjqr5tN/rides.jpg"
+                  
+         
+                          />
+                
+                          <p>
+                            ENTRY FREE FOR CHILDREN UNDER 10</p>
+                          </div>
+                
+                
+                        </div>
+        
+        
+                        <div class="yoyo">
+        
+                            <div id="oferta1">
+                              <img id="offer1Img"
+                              src="https://i.ibb.co/sQ2gwBY/roller.jpg"
+                 
+              
+                              />
+                    
+                              <p>
+                                  VIP SEASON PASSES AVAILABLE!</p>
+                              </div>
+              </div>
+
+            </div>
+          </div>
+
+        </body>
+  
+      <footer>
+            <ul class="contact">
+                <b>CONTACT US</b>
+                <li id="email">
+                  <a href="mailto:info@acropolis.gg">info@acropolis.gg</a>
+                </li>
+              </ul>
+              <ul class="info">
+                <div "infoBox">
+                <b>OTHER INFO</b>
+          
+                <li><a href="/">Terms and Conditions</a></li>
+                </div>
+              </ul>
+            </footer>
 
 
-</div>
-
-
-
-</div>
-
-  </body>
-  <footer class="grid-container-footer">
-    <ul class="contact">
-      <b>CONTACT US</b>
-      <li id="email">
-        <a href="mailto:info@acropolis.gg">info@acropolis.gg</a>
-      </li>
-    </ul>
-    <ul class="info">
-      <div "infoBox">
-      <b>OTHER INFO</b>
-
-      <li><a href="/">Terms and Conditions</a></li>
-      </div>
-    </ul>
-  </footer>
-</div>
 </html>

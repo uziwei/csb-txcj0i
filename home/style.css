@@ -1,5 +1,5 @@
 html {
-  min-height: 100vh;
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -11,11 +11,12 @@ html {
 
 body {
   background-color: rgb(245, 245, 245); /* sets background color */
-  text-align: center; /* centers all the content */
-  font-family: "Trebuchet MS", Tahoma, sans-serif; /* sets main font and fallback ones */
   position: relative;
   margin: 0;
-  padding: 0;
+  padding-bottom: 187px;
+  min-height: 100%;
+  text-align: center;
+  font-family: "Trebuchet MS", Tahoma, sans-serif; /* sets main font and fallback ones */
 }
 
 h1 {
@@ -126,7 +127,7 @@ nav li:hover {
   grid-area: banner;
   padding: 0px;
 
-  margin-top: 0px;
+  margin-top: 60px;
   margin-bottom: 0px;
   max-width: 1200px;
   margin-left: auto;
@@ -134,6 +135,7 @@ nav li:hover {
 }
 
 #imageBa {
+  transform: translateY(10px);
   max-width: 100%;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -144,23 +146,16 @@ nav li:hover {
   grid-area: offers;
   padding: 0px;
   margin: 0px;
+  z-index: 2;
 }
 
 #offers {
-  transform: translateY(-10px);
   background-color: rgb(52, 123, 255);
   margin: 0;
-  padding: 5px 0px 5px 0px;
+  padding: 10px 0px 5px 0px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.bookButton {
-  padding: 10px;
-  border: 1px solid black;
-  font-size: 20px;
-  background-color: rgb(255, 255, 95);
 }
 
 .booking {
@@ -170,7 +165,17 @@ nav li:hover {
   font-family: "Trebuchet MS", sans-serif;
   padding: 25px;
   background-color: rgb(52, 123, 255);
-  z-index: 1;
+  z-index: 2;
+  color: white;
+  font-size: 20px;
+}
+
+.bookButton {
+  margin-left: 10px;
+  padding: 14px;
+  border: 2px solid black;
+  font-size: 20px;
+  background-color: rgb(255, 255, 95);
 }
 
 #guestsBooking {
@@ -182,6 +187,7 @@ nav li:hover {
   background-color: white;
   outline: 1px;
   padding: 10px;
+  border: 2px solid black;
 }
 
 #offer {
@@ -198,7 +204,10 @@ nav li:hover {
 
 #offer {
   display: grid;
-  grid-template-columns: auto auto auto auto; /* sets how many rows and their size */
+  grid-template-columns: repeat(
+    4,
+    minmax(0, 1fr)
+  ); /* sets how many rows and their size */
   max-width: 1200px;
   margin-left: auto; /* centers all the grid with its contents */
   margin-right: auto; /* centers all the grid with its contents */
@@ -212,7 +221,7 @@ nav li:hover {
   max-width: 100%;
 }
 
-.grid-container-map {
+#main {
   display: grid; /* sets map page body as a grid layout */
   grid-template-columns: auto auto auto auto; /* sets how many rows and their size */
   grid-template-areas: "banner banner banner banner" "offers offers offers offers" "offer offer offer offer" "footer footer footer footer"; /* sets grid desired configuration */
@@ -220,14 +229,6 @@ nav li:hover {
   margin-right: auto; /* centers all the grid with its contents */
   min-width: 352px; /* sets grid minimum width */
   max-width: 100%; /* sets grid maximum width */
-}
-
-.grid-container-footer {
-  display: grid; /* sets footer element as subgrid of map grid */
-  grid-template-columns: auto auto; /* sets how many rows and their size */
-  grid-template-areas: "email extra"; /* sets grid desired configuration */
-  margin-left: auto; /* centers all the grid with its contents */
-  margin-right: auto; /* centers all the grid with its contents */
 }
 
 .contact {
@@ -247,24 +248,46 @@ nav li:hover {
 }
 
 footer {
+  position: absolute;
+  right: 0;
+  bottom: 98px;
+  left: 0;
+  padding: 10px 0px 10px 0px; /* sets margin spacing over and under footer area */
   background-color: rgb(255, 228, 73);
-  grid-area: footer;
-  margin-bottom: 100px;
-  padding: 20px 0px 20px 0px; /* sets margin spacing over and under footer area */
+  display: grid; /* sets footer element as subgrid of map grid */
+  grid-template-columns: auto auto; /* sets how many rows and their size */
   margin-left: auto; /* centers all the grid with its contents */
   margin-right: auto; /* centers all the grid with its contents */
+  z-index: 1;
 }
 
 footer a {
   color: rgb(236, 43, 0);
 }
 
-#email {
-  grid-area: email; /* sets email object as email grid area */
+.contact {
+  margin-left: auto;
+  margin-right: 100px;
 }
 
-#extra {
-  grid-area: extra; /* sets extra object as extra grid area */
-  margin-right: 40px; /* moves extra to the left */
-  max-width: 50px;
+.info {
+  margin-right: auto;
+  margin-left: 100px;
+}
+
+.yoyo {
+  background-color: rgb(238, 238, 238);
+  transition: 0.2s;
+  font-size: 25px;
+}
+
+.yoyo p {
+  padding: 10px;
+}
+
+.yoyo:hover {
+  border: 1.5px solid grey;
+  border-width: 0px 1.5px 0px 1.5px;
+  transform: scale(1.025);
+  z-index: 0;
 }
