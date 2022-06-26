@@ -84,7 +84,7 @@ nav {
 
 nav ul {
   float: right; /* moves nav bar to the right */
-  margin: 25px 10px 0px 0px; /* adds spacing to the nav from the page edege */
+  margin: 25px 0px 0px 0px; /* adds spacing to the nav from the page edege */
   transition: 1s;
   /*time it takes for nav bar animation to complete*/
 }
@@ -104,6 +104,14 @@ nav li a {
 
 nav li:hover {
   border-bottom: 4px solid black; /* changes nav bar button color filling when mouse hovered over it */
+}
+
+#nav1 {
+  border-bottom: 4px solid black;
+}
+
+#nav4 {
+  margin-right: 0px;
 }
 
 #nav4 select {
@@ -182,8 +190,8 @@ nav li:hover {
 }
 
 #mapImage {
-  margin-top: 30px; /* adds space above MAP Image */
-  max-width: 90%; /* limits MAP Image width respective to Map Grid section area width */
+  margin-top: 40px; /* adds space above MAP Image */
+  max-width: 95%; /* limits MAP Image width respective to Map Grid section area width */
   transition: 1s; /* duration of MAP Image animation */
 }
 
@@ -305,7 +313,7 @@ nav li:hover {
 }
 
 #control {
-  max-width: 1177.5px;
+  max-width: 1100px;
   margin-left: auto; /* centers all the grid with its contents */
   margin-right: auto; /* centers all the grid with its contents */
 }
